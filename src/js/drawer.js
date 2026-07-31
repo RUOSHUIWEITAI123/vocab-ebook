@@ -2,6 +2,7 @@
  * Bottom drawer for vocabulary translation + sentence translation display.
  * Supports: 580-word local index + online translation API for any word.
  */
+import { toggleWord, isInBank, initWordBank, onUpdate } from './wordbank.js';
 
 let vocabIndex = {};
 let extraDict = {};  // Offline dictionary for non-580 words
@@ -14,6 +15,7 @@ const lookupCache = new Map();
 export function initDrawer(index) {
   vocabIndex = index;
   isTouchDevice = 'ontouchstart' in window;
+  initWordBank();
 
   // Load offline extra dictionary
   loadExtraDict();
@@ -166,10 +168,22 @@ function showVocabDrawer(root, word, contextMeaning) {
         ${meanings.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
       </ul>
     </div>
-    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
+    <div class="drawer-actions">
+      <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>
+      <button class="drawer-bank-btn" id="drawer-bank-btn" data-root="${escapeHtml(root)}" data-word="${escapeHtml(word)}" data-meaning="${escapeHtml(contextMeaning || meanings[0] || '')}">
+        ${isInBankLocal(root) ? '✅ 已加入' : '📖 加入生词本'}
+      </button>
+    </div>`;
 
   content.innerHTML = html;
   document.getElementById('drawer-speak-btn').addEventListener('click', () => speakWord(word));
+  const bankBtn = document.getElementById('drawer-bank-btn');
+  if (bankBtn) {
+    bankBtn.addEventListener('click', () => {
+      const added = toggleWord(bankBtn.dataset.word, bankBtn.dataset.root, bankBtn.dataset.meaning);
+      bankBtn.textContent = added ? '✅ 已加入' : '📖 加入生词本';
+    });
+  }
   show();
 }
 
@@ -186,8 +200,17 @@ function showOfflineDrawer(word, meaning) {
     <div class="drawer-section" style="margin-top:4px;">
       <div class="drawer-section-label" style="font-size:0.7rem;color:var(--text-secondary);">（来自内置词库，无需联网）</div>
     </div>
-    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
+    <div class="drawer-actions">
+      <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>
+      <button class="drawer-bank-btn" id="drawer-bank-btn" data-root="${escapeHtml(word)}" data-word="${escapeHtml(word)}" data-meaning="${escapeHtml(meaning)}">
+        ${isInBankLocal(word) ? '✅ 已加入' : '📖 加入生词本'}
+      </button>
+    </div>`;
   document.getElementById('drawer-speak-btn').addEventListener('click', () => speakWord(word));
+  document.getElementById('drawer-bank-btn').addEventListener('click', function() {
+    const added = toggleWord(this.dataset.word, this.dataset.root, this.dataset.meaning);
+    this.textContent = added ? '✅ 已加入' : '📖 加入生词本';
+  });
   show();
 }
 
@@ -283,11 +306,23 @@ function renderLookupResult(word, result) {
     <div class="drawer-section" style="margin-top:8px;">
       <div class="drawer-section-label" style="font-size:0.7rem;color:var(--text-secondary);">（该词不在580词表中）</div>
     </div>
-    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
+    <div class="drawer-actions">
+      <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>
+      <button class="drawer-bank-btn" id="drawer-bank-btn" data-root="${escapeHtml(word)}" data-word="${escapeHtml(word)}" data-meaning="${escapeHtml(result.translation || '')}">
+        ${isInBankLocal(word) ? '✅ 已加入' : '📖 加入生词本'}
+      </button>
+    </div>`;
 
   content.innerHTML = html;
   const speakBtn = document.getElementById('drawer-speak-btn');
   if (speakBtn) speakBtn.addEventListener('click', () => speakWord(word));
+  const bankBtn = document.getElementById('drawer-bank-btn');
+  if (bankBtn) {
+    bankBtn.addEventListener('click', function() {
+      const added = toggleWord(this.dataset.word, this.dataset.root, this.dataset.meaning);
+      this.textContent = added ? '✅ 已加入' : '📖 加入生词本';
+    });
+  }
 }
 
 function renderLookupError(word, msg) {
@@ -429,6 +464,8 @@ function speakWord(word) {
     window.speechSynthesis.speak(u);
   }
 }
+
+function isInBankLocal(root) { return isInBank(root); }
 
 function escapeHtml(str) {
   const div = document.createElement('div');

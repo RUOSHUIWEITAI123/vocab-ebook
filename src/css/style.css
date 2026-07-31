@@ -887,6 +887,113 @@ body {
   border-radius: 3px;
 }
 
+/* ── Drawer Actions ───────────────────────────────────── */
+.drawer-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.drawer-bank-btn {
+  padding: 4px 10px;
+  border: 1px solid var(--vocab-color);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--vocab-color);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.drawer-bank-btn:hover {
+  background: var(--vocab-underline);
+}
+
+/* ── Word Bank Panel ──────────────────────────────────── */
+.wordbank-overlay {
+  position: fixed; inset: 0; background: var(--overlay); z-index: 400;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.wordbank-overlay.visible { opacity: 1; pointer-events: auto; }
+
+.wordbank-panel {
+  position: fixed; top: 0; right: 0; bottom: 0; width: 380px; max-width: 90vw;
+  z-index: 401; background: var(--drawer-bg);
+  transform: translateX(100%); transition: transform 0.3s ease;
+  display: flex; flex-direction: column; box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+}
+.wordbank-panel.visible { transform: translateX(0); }
+
+.wordbank-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 20px 12px; border-bottom: 1px solid var(--border);
+}
+.wordbank-header h3 { font-size: 1.1rem; color: var(--text); margin: 0; }
+.wordbank-close {
+  width: 32px; height: 32px; border: none; background: none;
+  font-size: 1.2rem; cursor: pointer; color: var(--text-secondary);
+}
+
+.wordbank-tabs { display: flex; padding: 8px 16px; gap: 4px; }
+.wb-tab {
+  flex: 1; padding: 8px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card-bg); cursor: pointer; font-family: inherit;
+  font-size: 0.85rem; color: var(--text-secondary);
+}
+.wb-tab.active { background: var(--vocab-color); color: #fff; border-color: var(--vocab-color); }
+
+.wordbank-body { flex: 1; overflow-y: auto; padding: 0 16px 16px; }
+
+.wb-word-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.wb-meaning { color: var(--text-secondary); font-size: 0.8rem; margin-left: 4px; }
+.wb-actions { display: flex; gap: 4px; }
+.wb-actions button {
+  width: 30px; height: 30px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--card-bg); cursor: pointer; font-size: 0.85rem;
+}
+
+.wb-empty { color: var(--text-secondary); text-align: center; padding: 40px 20px; }
+
+/* Review mode */
+#wb-review { display: flex; flex-direction: column; align-items: center; padding-top: 20px; }
+.wb-card {
+  width: 100%; max-width: 300px; height: 200px;
+  perspective: 600px; cursor: pointer; margin-bottom: 16px;
+}
+.wb-card-front, .wb-card-back {
+  position: absolute; width: 100%; height: 100%;
+  backface-visibility: hidden; border-radius: 16px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border: 2px solid var(--border); background: var(--card-bg);
+  transition: transform 0.4s;
+}
+.wb-card-back { transform: rotateY(180deg); }
+.wb-card.flipped .wb-card-front { transform: rotateY(180deg); }
+.wb-card.flipped .wb-card-back { transform: rotateY(0); }
+.wb-card-word { font-size: 1.6rem; font-weight: 700; color: var(--text); }
+.wb-card-hint { font-size: 0.8rem; color: var(--text-secondary); margin-top: 12px; }
+.wb-progress { margin-bottom: 16px; color: var(--text-secondary); font-size: 0.9rem; }
+.wb-btns { display: flex; gap: 12px; }
+.wb-btns button {
+  padding: 10px 24px; border: 2px solid var(--border); border-radius: 12px;
+  font-size: 1rem; cursor: pointer; font-family: inherit;
+  background: var(--card-bg); color: var(--text);
+}
+.wb-btns button.primary { background: var(--vocab-color); color: #fff; border-color: var(--vocab-color); }
+.wb-done { text-align: center; padding: 40px; }
+.wb-done button {
+  margin-top: 12px; padding: 10px 24px; border: none; border-radius: 12px;
+  background: var(--vocab-color); color: #fff; cursor: pointer; font-size: 1rem; font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .wordbank-panel { width: 100vw; max-width: 100vw; }
+}
+
 /* ── Print ─────────────────────────────────────────────── */
 @media print {
   .sidebar, .reader-toolbar, .part-navigation, .drawer, .drawer-overlay,

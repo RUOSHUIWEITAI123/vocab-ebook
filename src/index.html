@@ -23,6 +23,7 @@
       </div>
       <nav class="toc-list" id="toc-list"></nav>
       <div class="sidebar-footer">
+        <button class="icon-btn" id="wordbank-btn" title="生词本">📖</button>
         <button class="icon-btn" id="settings-btn" title="设置">⚙️</button>
       </div>
     </aside>
@@ -90,6 +91,23 @@
       </div>
     </div>
     <button class="settings-close" id="settings-close">关闭</button>
+  </div>
+
+  <!-- Word Bank Panel -->
+  <div class="wordbank-overlay" id="wordbank-overlay"></div>
+  <div class="wordbank-panel" id="wordbank-panel">
+    <div class="wordbank-header">
+      <h3>📖 生词本 <span id="wordbank-count">(0)</span></h3>
+      <button class="wordbank-close" id="wordbank-close">✕</button>
+    </div>
+    <div class="wordbank-tabs">
+      <button class="wb-tab active" data-tab="list">单词列表</button>
+      <button class="wb-tab" data-tab="review">复习模式</button>
+    </div>
+    <div class="wordbank-body" id="wordbank-body">
+      <div class="wb-list" id="wb-list"></div>
+      <div class="wb-review" id="wb-review" style="display:none"></div>
+    </div>
   </div>
 
   <script type="module" src="./js/app.js"></script>
