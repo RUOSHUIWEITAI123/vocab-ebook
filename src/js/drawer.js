@@ -48,13 +48,18 @@ export function initDrawer(index) {
 
   // RIGHT CLICK: sentence translation
   rc.addEventListener('contextmenu', (e) => {
-    const p = e.target.closest('.para.has-translation');
-    if (p) {
-      e.preventDefault(); e.stopPropagation();
-      const en = p.textContent.trim();
-      const cn = p.dataset.translationHtml;
-      if (en && cn) showSentence(en, cn);
+    const p = e.target.closest('.para');
+    if (!p) return;
+    e.preventDefault(); e.stopPropagation();
+    const en = p.textContent.trim().substring(0, 500);
+    if (!en) return;
+    // Check if has pre-linked translation (kaoyan)
+    if (p.dataset.translationHtml) {
+      showSentence(en, p.dataset.translationHtml);
+      return;
     }
+    // Translate on-the-fly (CET-4)
+    translateSentence(en);
   });
 
   // Touch: double-tap word, long-press sentence
@@ -162,6 +167,35 @@ async function showOnline(word) {
   } catch (e) {
     c.innerHTML = `<div class="drawer-word">${esc(word)}</div><div class="drawer-section"><div class="drawer-context-meaning">⚠️ 网络异常</div></div><button class="drawer-speak-btn" id="ds">🔊</button>`;
     document.getElementById('ds').onclick = () => speak(word);
+  }
+}
+
+const sentenceCache = {};
+
+async function translateSentence(en) {
+  const content = document.getElementById('drawer-content');
+  content.innerHTML = `<div class="drawer-section"><div class="drawer-section-label">📝 原文</div><div class="drawer-sentence-en">${esc(en)}</div></div><div class="drawer-section"><div class="drawer-section-label">🈯 译文</div><div class="drawer-sentence-cn">⏳ 翻译中...</div></div>`;
+  show();
+
+  // Check cache
+  const key = en.substring(0, 100);
+  if (sentenceCache[key]) {
+    content.innerHTML = `<div class="drawer-section"><div class="drawer-section-label">📝 原文</div><div class="drawer-sentence-en">${esc(en)}</div></div><div class="drawer-section"><div class="drawer-section-label">🈯 译文</div><div class="drawer-sentence-cn">${esc(sentenceCache[key])}</div></div>`;
+    return;
+  }
+
+  try {
+    const resp = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(en)}&langpair=en|zh`, { signal: AbortSignal.timeout(8000) });
+    const data = await resp.json();
+    if (data.responseStatus === 200 && data.responseData?.translatedText) {
+      const cn = data.responseData.translatedText.trim();
+      sentenceCache[key] = cn;
+      content.innerHTML = `<div class="drawer-section"><div class="drawer-section-label">📝 原文</div><div class="drawer-sentence-en">${esc(en)}</div></div><div class="drawer-section"><div class="drawer-section-label">🈯 译文</div><div class="drawer-sentence-cn">${esc(cn)}</div></div>`;
+    } else {
+      content.innerHTML = `<div class="drawer-section"><div class="drawer-section-label">📝 原文</div><div class="drawer-sentence-en">${esc(en)}</div></div><div class="drawer-section"><div class="drawer-section-label">🈯 译文</div><div class="drawer-sentence-cn">⚠️ 翻译失败，请重试</div></div>`;
+    }
+  } catch(e) {
+    content.innerHTML = `<div class="drawer-section"><div class="drawer-section-label">📝 原文</div><div class="drawer-sentence-en">${esc(en)}</div></div><div class="drawer-section"><div class="drawer-section-label">🈯 译文</div><div class="drawer-sentence-cn">⚠️ 网络异常</div></div>`;
   }
 }
 
