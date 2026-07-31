@@ -34,61 +34,60 @@ export function initDrawer(index, dataset) {
   const drawerOverlay = document.getElementById('drawer-overlay');
   const drawer = document.getElementById('drawer');
 
-  // Main click handler (delegated)
+  // LEFT CLICK: word translation
   readerContent.addEventListener('click', (e) => {
-    // Click on vocabulary word (green)
+    // Click on green vocab word → vocab drawer
     const vocabEl = e.target.closest('.vocab');
     if (vocabEl) {
       e.preventDefault();
       e.stopPropagation();
-      const root = vocabEl.dataset.root;
-      const word = vocabEl.dataset.word;
-      const contextMeaning = vocabEl.dataset.meaning;
-      showVocabDrawer(root, word, contextMeaning);
+      showVocabDrawer(vocabEl.dataset.root, vocabEl.dataset.word, vocabEl.dataset.meaning);
       return;
     }
 
-    // Click on English paragraph for sentence translation
+    // Click on text → word lookup
     if (!isTouchDevice) {
-      const paraEl = e.target.closest('.para.has-translation');
-      if (paraEl && !e.target.closest('.vocab')) {
-        const clickedWord = getWordAtClick(e);
-        if (clickedWord) {
-          const lower = clickedWord.toLowerCase();
-          // Check if word is in any known dictionary
-          if (vocabIndex[lower] || findRootInIndex(lower)) {
-            const root = findRootInIndex(lower) || lower;
-            showVocabDrawer(root, clickedWord, null);
-            return;
-          }
-          // Check offline extra dictionary
-          const offlineResult = lookupOffline(clickedWord);
-          if (offlineResult) {
-            showOfflineDrawer(clickedWord, offlineResult.meaning);
-            return;
-          }
-          // Word not in any dictionary → show sentence translation instead
-        }
-        // Show sentence translation
-        const englishText = getParagraphEnglishText(paraEl);
-        const chineseHtml = paraEl.dataset.translationHtml;
-        if (englishText && chineseHtml) {
-          if (isVisible) { hideDrawer(); return; }
-          showSentenceDrawer(englishText, chineseHtml);
+      const word = getWordAtClick(e);
+      if (word) {
+        const lower = word.toLowerCase();
+        // Check vocab index
+        const root = findRootInIndex(lower);
+        if (vocabIndex[lower] || root) {
+          showVocabDrawer(root || lower, word, null);
           return;
         }
+        // Check offline dictionary
+        const off = lookupOffline(word);
+        if (off) { showOfflineDrawer(word, off.meaning); return; }
+        // Online lookup
+        showLookupDrawer(word);
+        return;
       }
     }
 
-    // Close drawer if open and clicking elsewhere
-    if (isVisible && !e.target.closest('.vocab') && !e.target.closest('.para')) {
-      hideDrawer();
+    // Close drawer if clicking empty area
+    if (isVisible) hideDrawer();
+  });
+
+  // RIGHT CLICK: sentence translation
+  readerContent.addEventListener('contextmenu', (e) => {
+    const paraEl = e.target.closest('.para.has-translation');
+    if (paraEl) {
+      e.preventDefault();
+      e.stopPropagation();
+      const englishText = getParagraphEnglishText(paraEl);
+      const chineseHtml = paraEl.dataset.translationHtml;
+      if (englishText && chineseHtml) {
+        showSentenceDrawer(englishText, chineseHtml);
+      }
     }
   });
 
-  // Touch device: word lookup on double-tap
+  // Touch: double-tap = word, long-press = sentence
   if (isTouchDevice) {
     let lastTap = 0;
+    let longPressTimer = null;
+
     readerContent.addEventListener('click', (e) => {
       if (e.target.closest('.vocab')) return;
       const now = Date.now();
@@ -97,25 +96,10 @@ export function initDrawer(index, dataset) {
         if (word) {
           const lower = word.toLowerCase();
           if (vocabIndex[lower] || findRootInIndex(lower)) {
-            const root = findRootInIndex(lower) || lower;
-            showVocabDrawer(root, word, null);
+            showVocabDrawer(findRootInIndex(lower) || lower, word, null);
           } else {
             const off = lookupOffline(word);
-            if (off) {
-              showOfflineDrawer(word, off.meaning);
-            } else {
-              showLookupDrawer(word);
-            }
-          }
-        } else {
-          // Try sentence translation
-          const paraEl = e.target.closest('.para.has-translation');
-          if (paraEl) {
-            const englishText = getParagraphEnglishText(paraEl);
-            const chineseHtml = paraEl.dataset.translationHtml;
-            if (englishText && chineseHtml) {
-              showSentenceDrawer(englishText, chineseHtml);
-            }
+            off ? showOfflineDrawer(word, off.meaning) : showLookupDrawer(word);
           }
         }
         lastTap = 0;
@@ -123,6 +107,19 @@ export function initDrawer(index, dataset) {
       }
       lastTap = now;
     });
+
+    readerContent.addEventListener('touchstart', (e) => {
+      const paraEl = e.target.closest('.para.has-translation');
+      if (paraEl) {
+        longPressTimer = setTimeout(() => {
+          const englishText = getParagraphEnglishText(paraEl);
+          const chineseHtml = paraEl.dataset.translationHtml;
+          if (englishText && chineseHtml) showSentenceDrawer(englishText, chineseHtml);
+        }, 600);
+      }
+    }, { passive: true });
+    readerContent.addEventListener('touchend', () => clearTimeout(longPressTimer));
+    readerContent.addEventListener('touchmove', () => clearTimeout(longPressTimer));
   }
 
   // Close drawer via overlay
