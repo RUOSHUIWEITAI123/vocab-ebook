@@ -217,20 +217,217 @@
                   "value": " despite the challenges."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**appreciate**「感激，感谢」，**appreciation**「感谢，感激，重视，赏识，欣赏」，**appreciative**「欣赏的，表示感激的」，**appreciator**「鉴赏者」，**approve**「/vi. 赞成，同意，批准」，**disapprove**「不赞成，不同意，不批准」，**peel**「剥皮，剥落」，**appeal**「sb. :」，**acquire**「取得，获得」，**acquired**「习得的」，**acquirement**「学到的东西，造诣」，**require**「需要，要求」，**enquire**「询问，打听」，**inquire**「询问，打听」，**accomplish**「完成，到达」，**complete**「完成，结束」，**finish**「完成，结束」，**adopt**「采用」，**adapt**「适应，适合（adapt to）」，**adjust**「调整adjust to」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "appreciate",
+                  "root": "appreciate",
+                  "contextMeaning": "感激，感谢"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "appreciation",
+                  "root": "appreciation",
+                  "contextMeaning": "感谢，感激，重视，赏识，欣赏"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "appreciative",
+                  "root": "appreciative",
+                  "contextMeaning": "欣赏的，表示感激的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "appreciator",
+                  "root": "appreciator",
+                  "contextMeaning": "鉴赏者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "approve",
+                  "root": "approve",
+                  "contextMeaning": "/vi. 赞成，同意，批准"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "disapprove",
+                  "root": "disapprove",
+                  "contextMeaning": "不赞成，不同意，不批准"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "peel",
+                  "root": "peel",
+                  "contextMeaning": "剥皮，剥落"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "appeal",
+                  "root": "appeal",
+                  "contextMeaning": "sb. :"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "acquire",
+                  "root": "acquire",
+                  "contextMeaning": "取得，获得"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "acquired",
+                  "root": "acquired",
+                  "contextMeaning": "习得的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "acquirement",
+                  "root": "acquirement",
+                  "contextMeaning": "学到的东西，造诣"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "require",
+                  "root": "require",
+                  "contextMeaning": "需要，要求"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "enquire",
+                  "root": "enquire",
+                  "contextMeaning": "询问，打听"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "inquire",
+                  "root": "inquire",
+                  "contextMeaning": "询问，打听"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "accomplish",
+                  "root": "accomplish",
+                  "contextMeaning": "完成，到达"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "complete",
+                  "root": "complete",
+                  "contextMeaning": "完成，结束"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "finish",
+                  "root": "finish",
+                  "contextMeaning": "完成，结束"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adopt",
+                  "root": "adopt",
+                  "contextMeaning": "采用"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adapt",
+                  "root": "adapt",
+                  "contextMeaning": "适应，适合（adapt to"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adjust",
+                  "root": "adjust",
+                  "contextMeaning": "调整adjust to"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -451,20 +648,220 @@
                   "value": " fascinated him from the start."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**adoptive**「采用的，收养关系的」，**adoption**「采用，收养」，**adoptable**「可采用的，可收养的」，**adopter**「养父母」，**adoptee**「被收养者」，**adhere**「坚持，粘附，附着」，**adherence**「坚持，依附，信仰」，**adherent**「拥护者」，**alter**「/vi. 改变，改动，变更」，**alternative**「可改编的，可改动的」，**alternation**「改变，变动」，**alternatively**「或者(or) ，要不」，**amendment**「修订案」，**accelerate**「加速，促进」，**acceleration**「加速」，**decelerate**「减速」，**acknowledge**「承认」，**ban**「取缔，禁止」，**band**「乐队(Beyond adv. A goes beyond B )」，**bank**「银行，岸堤」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "adoptive",
+                  "root": "adoptive",
+                  "contextMeaning": "采用的，收养关系的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adoption",
+                  "root": "adoption",
+                  "contextMeaning": "采用，收养"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adoptable",
+                  "root": "adoptable",
+                  "contextMeaning": "可采用的，可收养的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adopter",
+                  "root": "adopter",
+                  "contextMeaning": "养父母"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adoptee",
+                  "root": "adoptee",
+                  "contextMeaning": "被收养者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adhere",
+                  "root": "adhere",
+                  "contextMeaning": "坚持，粘附，附着"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adherence",
+                  "root": "adherence",
+                  "contextMeaning": "坚持，依附，信仰"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adherent",
+                  "root": "adherent",
+                  "contextMeaning": "拥护者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "alter",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（/vi. 改变，改动，变更）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "alternative",
+                  "root": "alternative",
+                  "contextMeaning": "可改编的，可改动的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "alternation",
+                  "root": "alternation",
+                  "contextMeaning": "改变，变动"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "alternatively",
+                  "root": "alternatively",
+                  "contextMeaning": "或者(or"
+                },
+                {
+                  "type": "text",
+                  "value": " ，要不」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "amendment",
+                  "root": "amendment",
+                  "contextMeaning": "修订案"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "accelerate",
+                  "root": "accelerate",
+                  "contextMeaning": "加速，促进"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "acceleration",
+                  "root": "acceleration",
+                  "contextMeaning": "加速"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "decelerate",
+                  "root": "decelerate",
+                  "contextMeaning": "减速"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "acknowledge",
+                  "root": "acknowledge",
+                  "contextMeaning": "承认"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "ban",
+                  "root": "ban",
+                  "contextMeaning": "取缔，禁止"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "band",
+                  "root": "band",
+                  "contextMeaning": "乐队(Beyond adv. A goes beyond B"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "bank",
+                  "root": "bank",
+                  "contextMeaning": "银行，岸堤"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -685,20 +1082,220 @@
                   "value": " impressed everyone in the room."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**bang**「砰的关上，发出巨响」，**bother**「/vi. 打搅，麻烦」，**brother**「兄弟」，**trouble**「麻烦，困难= difficulty = challenge」，**burst**「tears 突然大哭」，**brake**「刹车n. 刹车装置」，**break**「破碎，弄坏，弄破，违反，中断....」，**calculate**「计算，核算」，**calculation**「计算，考虑」，**calculative**「计算的，精于计算的，精明的」，**calendar**「日历，日程表」，**consume**「消耗，耗尽」，**consumer**「消费者，用户」，**consumption**「消费，消耗」，**contain**「包含，容纳」，**attain**「获得，达到」，**detain**「拘留，扣押」，**entertain**「招待，娱乐(entertainment 休闲娱乐)」，**crash**「撞碎，坠毁，破产」，**crush**「/ n.」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "bang",
+                  "root": "bang",
+                  "contextMeaning": "砰的关上，发出巨响"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "bother",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（/vi. 打搅，麻烦）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "brother",
+                  "root": "brother",
+                  "contextMeaning": "兄弟"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "trouble",
+                  "root": "trouble",
+                  "contextMeaning": "麻烦，困难= difficulty = challenge"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "burst",
+                  "root": "burst",
+                  "contextMeaning": "tears 突然大哭"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "brake",
+                  "root": "brake",
+                  "contextMeaning": "刹车n. 刹车装置"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "break",
+                  "root": "break",
+                  "contextMeaning": "破碎，弄坏，弄破，违反，中断...."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "calculate",
+                  "root": "calculate",
+                  "contextMeaning": "计算，核算"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "calculation",
+                  "root": "calculation",
+                  "contextMeaning": "计算，考虑"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "calculative",
+                  "root": "calculative",
+                  "contextMeaning": "计算的，精于计算的，精明的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "calendar",
+                  "root": "calendar",
+                  "contextMeaning": "日历，日程表"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consume",
+                  "root": "consume",
+                  "contextMeaning": "消耗，耗尽"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consumer",
+                  "root": "consumer",
+                  "contextMeaning": "消费者，用户"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consumption",
+                  "root": "consumption",
+                  "contextMeaning": "消费，消耗"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "contain",
+                  "root": "contain",
+                  "contextMeaning": "包含，容纳"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "attain",
+                  "root": "attain",
+                  "contextMeaning": "获得，达到"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "detain",
+                  "root": "detain",
+                  "contextMeaning": "拘留，扣押"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "entertain",
+                  "root": "entertain",
+                  "contextMeaning": "招待，娱乐(entertainment 休闲娱乐"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "crash",
+                  "root": "crash",
+                  "contextMeaning": "撞碎，坠毁，破产"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "crush",
+                  "root": "crush",
+                  "contextMeaning": "/ n."
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -919,20 +1516,220 @@
                   "value": " the concept carefully."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**clash**「/ n. 撞击声，冲突」，**derive**「使...起源于，来自」，**dispose**「除掉」，**disposal**「处理，清除」，**impose**「强加，强迫，施加影响」，**expose**「揭露，曝光= reveal = disclose」，**propose**「提议」，**compose**「组成」，**display**「显示，炫耀，陈列」，**establish**「创立，建立」，**establishment**「创立，建立」，**established**「确定的，既定的」，**fine**「罚款(adj.好的)」，**define**「下定义」，**refine**「完善，改善」，**identify**「认出，鉴定」，**identification**「辨认」，**ignore**「忽视，不理会，不予理睬」，**oversee**「监管，监督)」，**invade**「侵入，侵略，侵袭」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "clash",
+                  "root": "clash",
+                  "contextMeaning": "/ n. 撞击声，冲突"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "derive",
+                  "root": "derive",
+                  "contextMeaning": "使...起源于，来自"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "dispose",
+                  "root": "dispose",
+                  "contextMeaning": "除掉"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "disposal",
+                  "root": "disposal",
+                  "contextMeaning": "处理，清除"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "impose",
+                  "root": "impose",
+                  "contextMeaning": "强加，强迫，施加影响"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "expose",
+                  "root": "expose",
+                  "contextMeaning": "揭露，曝光= reveal = disclose"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "propose",
+                  "root": "propose",
+                  "contextMeaning": "提议"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "compose",
+                  "root": "compose",
+                  "contextMeaning": "组成"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "display",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（显示，炫耀，陈列）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "establish",
+                  "root": "establish",
+                  "contextMeaning": "创立，建立"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "establishment",
+                  "root": "establishment",
+                  "contextMeaning": "创立，建立"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "established",
+                  "root": "established",
+                  "contextMeaning": "确定的，既定的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "fine",
+                  "root": "fine",
+                  "contextMeaning": "罚款(adj.好的"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "define",
+                  "root": "define",
+                  "contextMeaning": "下定义"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "refine",
+                  "root": "refine",
+                  "contextMeaning": "完善，改善"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "identify",
+                  "root": "identify",
+                  "contextMeaning": "认出，鉴定"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "identification",
+                  "root": "identification",
+                  "contextMeaning": "辨认"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "ignore",
+                  "root": "ignore",
+                  "contextMeaning": "忽视，不理会，不予理睬"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "oversee",
+                  "root": "oversee",
+                  "contextMeaning": "监管，监督"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "invade",
+                  "root": "invade",
+                  "contextMeaning": "侵入，侵略，侵袭"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1153,20 +1950,220 @@
                   "value": " impressed everyone in the room."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**invasion**「入侵，侵犯」，**introduce**「介绍」，**isolate**「使隔离，使孤立」，**isolation**「隔绝，孤立，隔离，绝缘，离析」，**oblige**「使感谢或感激」，**obliged**「感激的」，**obligation**「责任，义务」，**offend**「冒犯，触犯」，**offence**「冒犯，触怒」，**offender**「冒犯者」，**defend**「+ 积极」，**defendant**「被告」，**plaintiff**「原告」，**restrict**「.」，**restrictive**「限制的，约束的」，**strict**「严格的，严厉的」，**strain**「/v. 压力，拉力，张力」，**recognize**「认出，识别」，**cognition**「认识，认知」，**reject**「拒绝接受，不予考虑」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "invasion",
+                  "root": "invasion",
+                  "contextMeaning": "入侵，侵犯"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "introduce",
+                  "root": "introduce",
+                  "contextMeaning": "介绍"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "isolate",
+                  "root": "isolate",
+                  "contextMeaning": "使隔离，使孤立"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "isolation",
+                  "root": "isolation",
+                  "contextMeaning": "隔绝，孤立，隔离，绝缘，离析"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "oblige",
+                  "root": "oblige",
+                  "contextMeaning": "使感谢或感激"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "obliged",
+                  "root": "obliged",
+                  "contextMeaning": "感激的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "obligation",
+                  "root": "obligation",
+                  "contextMeaning": "责任，义务"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "offend",
+                  "root": "offend",
+                  "contextMeaning": "冒犯，触犯"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "offence",
+                  "root": "offence",
+                  "contextMeaning": "冒犯，触怒"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "offender",
+                  "root": "offender",
+                  "contextMeaning": "冒犯者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "defend",
+                  "root": "defend",
+                  "contextMeaning": "+ 积极"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "defendant",
+                  "root": "defendant",
+                  "contextMeaning": "被告"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "plaintiff",
+                  "root": "plaintiff",
+                  "contextMeaning": "原告"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "restrict",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（.）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "restrictive",
+                  "root": "restrictive",
+                  "contextMeaning": "限制的，约束的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "strict",
+                  "root": "strict",
+                  "contextMeaning": "严格的，严厉的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "strain",
+                  "root": "strain",
+                  "contextMeaning": "/v. 压力，拉力，张力"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "recognize",
+                  "root": "recognize",
+                  "contextMeaning": "认出，识别"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "cognition",
+                  "root": "cognition",
+                  "contextMeaning": "认识，认知"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "reject",
+                  "root": "reject",
+                  "contextMeaning": "拒绝接受，不予考虑"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1384,20 +2381,217 @@
                   "value": " as part of his daily routine."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**object**「反对（objection n. 反对）」，**objective**「客观的（objectiveness n. 客观性）」，**subject**「臣服于，顺从n. 主题，话题」，**project**「计划，规划n. 项目，方案」，**reinforce**「加强，加固，强化」，**rely**「依赖，依靠」，**ruins**「废墟」，**serve**「招待，服务」，**service**「服务」，**split**「劈开」，**spit**「吐(spiting 随地吐痰」，**spill**「洒，使溢出，溅出，倒出」，**slide**「滑动，滑行n. 幻灯片」，**stimulate**「刺激，激励」，**stimulation**「激励，鼓舞，刺激」，**stimulative**「刺激的，激励的，促进的」，**sustain**「维持，支持」，**sustainable**「可持续的(sustainable development 可持续发展)，」，**sustainability**「持续性」，**strive**「努力，奋斗」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "object",
+                  "root": "object",
+                  "contextMeaning": "反对（objection n. 反对"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "objective",
+                  "root": "objective",
+                  "contextMeaning": "客观的（objectiveness n. 客观性"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "subject",
+                  "root": "subject",
+                  "contextMeaning": "臣服于，顺从n. 主题，话题"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "project",
+                  "root": "project",
+                  "contextMeaning": "计划，规划n. 项目，方案"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "reinforce",
+                  "root": "reinforce",
+                  "contextMeaning": "加强，加固，强化"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "rely",
+                  "root": "rely",
+                  "contextMeaning": "依赖，依靠"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "ruins",
+                  "root": "ruins",
+                  "contextMeaning": "废墟"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "serve",
+                  "root": "serve",
+                  "contextMeaning": "招待，服务"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "service",
+                  "root": "service",
+                  "contextMeaning": "服务"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "split",
+                  "root": "split",
+                  "contextMeaning": "劈开"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "spit",
+                  "root": "spit",
+                  "contextMeaning": "吐(spiting 随地吐痰"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "spill",
+                  "root": "spill",
+                  "contextMeaning": "洒，使溢出，溅出，倒出"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "slide",
+                  "root": "slide",
+                  "contextMeaning": "滑动，滑行n. 幻灯片"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "stimulate",
+                  "root": "stimulate",
+                  "contextMeaning": "刺激，激励"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "stimulation",
+                  "root": "stimulation",
+                  "contextMeaning": "激励，鼓舞，刺激"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "stimulative",
+                  "root": "stimulative",
+                  "contextMeaning": "刺激的，激励的，促进的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sustain",
+                  "root": "sustain",
+                  "contextMeaning": "维持，支持"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sustainable",
+                  "root": "sustainable",
+                  "contextMeaning": "可持续的(sustainable development 可持续发展"
+                },
+                {
+                  "type": "text",
+                  "value": "，」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sustainability",
+                  "root": "sustainability",
+                  "contextMeaning": "持续性"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "strive",
+                  "root": "strive",
+                  "contextMeaning": "努力，奋斗"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1621,20 +2815,223 @@
                   "value": "） despite the challenges."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**endeavor**「努力= effort n.」，**swallow**「咽，淹没，吞没，耗尽」，**tend**「易于，趋向」，**intend**「想要打算」，**tendency**「倾向，趋势，偏好(preference)」，**trend**「倾向，趋势，走向」，**trace**「追踪，找到」，**track**「跟踪，追踪」，**trade**「贸易，交易」，**torture**「拷打，折磨，使痛苦，使弯曲n. 拷打，折磨」，**torturous**「折磨人的，充满痛苦的」，**distort**「使扭曲，使弯曲」，**pain**「使痛苦，使苦恼」，**painful**「令人痛苦的，不愉快的」，**undergo**「经历，承受」，**urge**「敦促，催促」，**emergency**「紧急事件」，**prompt**「促进，迅速做...」，**press**「压」，**impress**「留下...深刻印象(impressive 有深刻印象的，印象深刻的)」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "endeavor",
+                  "root": "endeavor",
+                  "contextMeaning": "努力= effort n."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "swallow",
+                  "root": "swallow",
+                  "contextMeaning": "咽，淹没，吞没，耗尽"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tend",
+                  "root": "tend",
+                  "contextMeaning": "易于，趋向"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "intend",
+                  "root": "intend",
+                  "contextMeaning": "想要打算"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tendency",
+                  "root": "tendency",
+                  "contextMeaning": "倾向，趋势，偏好(preference"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "trend",
+                  "root": "trend",
+                  "contextMeaning": "倾向，趋势，走向"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "trace",
+                  "root": "trace",
+                  "contextMeaning": "追踪，找到"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "track",
+                  "root": "track",
+                  "contextMeaning": "跟踪，追踪"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "trade",
+                  "root": "trade",
+                  "contextMeaning": "贸易，交易"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "torture",
+                  "root": "torture",
+                  "contextMeaning": "拷打，折磨，使痛苦，使弯曲n. 拷打，折磨"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "torturous",
+                  "root": "torturous",
+                  "contextMeaning": "折磨人的，充满痛苦的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "distort",
+                  "root": "distort",
+                  "contextMeaning": "使扭曲，使弯曲"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "pain",
+                  "root": "pain",
+                  "contextMeaning": "使痛苦，使苦恼"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "painful",
+                  "root": "painful",
+                  "contextMeaning": "令人痛苦的，不愉快的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "undergo",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（经历，承受）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "urge",
+                  "root": "urge",
+                  "contextMeaning": "敦促，催促"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "emergency",
+                  "root": "emergency",
+                  "contextMeaning": "紧急事件"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "prompt",
+                  "root": "prompt",
+                  "contextMeaning": "促进，迅速做..."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "press",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（压）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "impress",
+                  "root": "impress",
+                  "contextMeaning": "留下...深刻印象(impressive 有深刻印象的，印象深刻的"
+                },
+                {
+                  "type": "text",
+                  "value": "」。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1852,20 +3249,217 @@
                   "value": " was essential for understanding the topic."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**compress**「压缩」，**depress**「压抑，抑郁(Depression 抑郁症)」，**utilize**「利用，使用(formal expression )」，**use**「使用」，**utilization**「利用」，**usage**「使用」，**apply**「应用，运用」，**application**「应用(app.)」，**employ**「利用，采用，雇佣」，**employer**「雇主」，**employee**「雇员」，**vanish**「消失，不见」，**vanity**「空虚」，**wander**「漫游，闲逛」，**wonder**「想知道，对……感到疑惑」，**the**「wonders of the world 世界七大奇观」，**wonderful**「精彩的」，**idle**「& vt. 不做事」，**idol**「偶像，崇拜的人」，**example**「榜样」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "compress",
+                  "root": "compress",
+                  "contextMeaning": "压缩"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "depress",
+                  "root": "depress",
+                  "contextMeaning": "压抑，抑郁(Depression 抑郁症"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "utilize",
+                  "root": "utilize",
+                  "contextMeaning": "利用，使用(formal expression"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "use",
+                  "root": "use",
+                  "contextMeaning": "使用"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "utilization",
+                  "root": "utilization",
+                  "contextMeaning": "利用"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "usage",
+                  "root": "usage",
+                  "contextMeaning": "使用"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "apply",
+                  "root": "apply",
+                  "contextMeaning": "应用，运用"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "application",
+                  "root": "application",
+                  "contextMeaning": "应用(app."
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "employ",
+                  "root": "employ",
+                  "contextMeaning": "利用，采用，雇佣"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "employer",
+                  "root": "employer",
+                  "contextMeaning": "雇主"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "employee",
+                  "root": "employee",
+                  "contextMeaning": "雇员"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vanish",
+                  "root": "vanish",
+                  "contextMeaning": "消失，不见"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vanity",
+                  "root": "vanity",
+                  "contextMeaning": "空虚"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "wander",
+                  "root": "wander",
+                  "contextMeaning": "漫游，闲逛"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "wonder",
+                  "root": "wonder",
+                  "contextMeaning": "想知道，对……感到疑惑"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "the",
+                  "root": "the",
+                  "contextMeaning": "wonders of the world 世界七大奇观"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "wonderful",
+                  "root": "wonderful",
+                  "contextMeaning": "精彩的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "idle",
+                  "root": "idle",
+                  "contextMeaning": "& vt. 不做事"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "idol",
+                  "root": "idol",
+                  "contextMeaning": "偶像，崇拜的人"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "example",
+                  "root": "example",
+                  "contextMeaning": "榜样"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2086,20 +3680,220 @@
                   "value": " in his research paper."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**march**「行军前进」，**agent**「代理人，代理商」，**alcohol**「含酒精的饮料，酒精」，**alcoholic**「酒鬼，嗜酒如命的人」，**gambling**「赌钱」，**drug**「毒品，药品(drug-taking)」，**fall**「the addiction to sth.」，**barrier**「障碍」，**battery**「电池」，**setback**「挫折，阻碍」，**handicap**「障碍，缺陷」，**hamper**「阻碍物」，**preclude**「妨碍，阻止，排除」，**hinder**「阻碍，妨碍」，**bachelor**「.」，**butcher**「屠夫」，**master**「硕士，能手，大师」，**breed**「种类，类型（多指人）」，**bread**「面包」，**boundary**「分界线，边界」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "march",
+                  "root": "march",
+                  "contextMeaning": "行军前进"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "agent",
+                  "root": "agent",
+                  "contextMeaning": "代理人，代理商"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "alcohol",
+                  "root": "alcohol",
+                  "contextMeaning": "含酒精的饮料，酒精"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "alcoholic",
+                  "root": "alcoholic",
+                  "contextMeaning": "酒鬼，嗜酒如命的人"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "gambling",
+                  "root": "gambling",
+                  "contextMeaning": "赌钱"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "drug",
+                  "root": "drug",
+                  "contextMeaning": "毒品，药品(drug-taking"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "fall",
+                  "root": "fall",
+                  "contextMeaning": "the addiction to sth."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "barrier",
+                  "root": "barrier",
+                  "contextMeaning": "障碍"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "battery",
+                  "root": "battery",
+                  "contextMeaning": "电池"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "setback",
+                  "root": "setback",
+                  "contextMeaning": "挫折，阻碍"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "handicap",
+                  "root": "handicap",
+                  "contextMeaning": "障碍，缺陷"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "hamper",
+                  "root": "hamper",
+                  "contextMeaning": "阻碍物"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "preclude",
+                  "root": "preclude",
+                  "contextMeaning": "妨碍，阻止，排除"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "hinder",
+                  "root": "hinder",
+                  "contextMeaning": "阻碍，妨碍"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "bachelor",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（.）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "butcher",
+                  "root": "butcher",
+                  "contextMeaning": "屠夫"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "master",
+                  "root": "master",
+                  "contextMeaning": "硕士，能手，大师"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "breed",
+                  "root": "breed",
+                  "contextMeaning": "种类，类型（多指人"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "bread",
+                  "root": "bread",
+                  "contextMeaning": "面包"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "boundary",
+                  "root": "boundary",
+                  "contextMeaning": "分界线，边界"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2317,20 +4111,217 @@
                   "value": " in his research paper."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**bound**「界限v. 跳跃adj. 一定会，注定会」，**budget**「预算」，**candidate**「候选人，应聘者」，**campus**「校园，大学」，**catalog**「目录（册）」，**cargo**「船货，（船、飞机等装载的）货物」，**air**「空运货物」，**freight**「货运公司」，**career**「生涯，职业」，**clause**「条款」，**bar**「司法考试」，**consequence**「结果」，**consequent**「随之发生的」，**consequently**「因此，结果」，**tail**「尾巴（做词根表示“剪，割”）」，**tailor**「裁缝v. 订做」，**retail**「/ v. 零售」，**entail**「牵涉」，**curtail**「缩短，缩减，限制」，**extent**「程度，范围」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "bound",
+                  "root": "bound",
+                  "contextMeaning": "界限v. 跳跃adj. 一定会，注定会"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "budget",
+                  "root": "budget",
+                  "contextMeaning": "预算"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "candidate",
+                  "root": "candidate",
+                  "contextMeaning": "候选人，应聘者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "campus",
+                  "root": "campus",
+                  "contextMeaning": "校园，大学"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "catalog",
+                  "root": "catalog",
+                  "contextMeaning": "目录（册"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "cargo",
+                  "root": "cargo",
+                  "contextMeaning": "船货，（船、飞机等装载的"
+                },
+                {
+                  "type": "text",
+                  "value": "货物」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "air",
+                  "root": "air",
+                  "contextMeaning": "空运货物"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "freight",
+                  "root": "freight",
+                  "contextMeaning": "货运公司"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "career",
+                  "root": "career",
+                  "contextMeaning": "生涯，职业"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "clause",
+                  "root": "clause",
+                  "contextMeaning": "条款"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "bar",
+                  "root": "bar",
+                  "contextMeaning": "司法考试"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consequence",
+                  "root": "consequence",
+                  "contextMeaning": "结果"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consequent",
+                  "root": "consequent",
+                  "contextMeaning": "随之发生的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consequently",
+                  "root": "consequently",
+                  "contextMeaning": "因此，结果"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tail",
+                  "root": "tail",
+                  "contextMeaning": "尾巴（做词根表示“剪，割”"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tailor",
+                  "root": "tailor",
+                  "contextMeaning": "裁缝v. 订做"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "retail",
+                  "root": "retail",
+                  "contextMeaning": "/ v. 零售"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "entail",
+                  "root": "entail",
+                  "contextMeaning": "牵涉"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "curtail",
+                  "root": "curtail",
+                  "contextMeaning": "缩短，缩减，限制"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "extent",
+                  "root": "extent",
+                  "contextMeaning": "程度，范围"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2548,20 +4539,217 @@
                   "value": " was essential for understanding the topic."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**extend**「延长」，**grant**「补助金助学金」，**grand**「豪华的，宏伟大，壮丽的，重大的」，**greener**「没经验的人」，**individual**「个人，个体adj.单独的，个人的」，**innovation**「创新，革新」，**innovative**「创新的」，**novel**「新颖的n. 小说」，**novelty**「新奇的事物」，**interfere**「干涉，妨碍」，**interference**「干涉，干扰，冲突」，**refer**「参考」，**impact**「影响，效果，碰撞，冲击(侧重消极影响)」，**network**「网状物」，**internet**「/ online celebrity 网红」，**live**「直播」，**organization**「组织，机构」，**organize**「组织，创办」，**organic**「有机农场」，**poverty**「贫穷，贫困」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "extend",
+                  "root": "extend",
+                  "contextMeaning": "延长"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "grant",
+                  "root": "grant",
+                  "contextMeaning": "补助金助学金"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "grand",
+                  "root": "grand",
+                  "contextMeaning": "豪华的，宏伟大，壮丽的，重大的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "greener",
+                  "root": "greener",
+                  "contextMeaning": "没经验的人"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "individual",
+                  "root": "individual",
+                  "contextMeaning": "个人，个体adj.单独的，个人的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "innovation",
+                  "root": "innovation",
+                  "contextMeaning": "创新，革新"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "innovative",
+                  "root": "innovative",
+                  "contextMeaning": "创新的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "novel",
+                  "root": "novel",
+                  "contextMeaning": "新颖的n. 小说"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "novelty",
+                  "root": "novelty",
+                  "contextMeaning": "新奇的事物"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "interfere",
+                  "root": "interfere",
+                  "contextMeaning": "干涉，妨碍"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "interference",
+                  "root": "interference",
+                  "contextMeaning": "干涉，干扰，冲突"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "refer",
+                  "root": "refer",
+                  "contextMeaning": "参考"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "impact",
+                  "root": "impact",
+                  "contextMeaning": "影响，效果，碰撞，冲击(侧重消极影响"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "network",
+                  "root": "network",
+                  "contextMeaning": "网状物"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "internet",
+                  "root": "internet",
+                  "contextMeaning": "/ online celebrity 网红"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "live",
+                  "root": "live",
+                  "contextMeaning": "直播"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "organization",
+                  "root": "organization",
+                  "contextMeaning": "组织，机构"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "organize",
+                  "root": "organize",
+                  "contextMeaning": "组织，创办"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "organic",
+                  "root": "organic",
+                  "contextMeaning": "有机农场"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "poverty",
+                  "root": "poverty",
+                  "contextMeaning": "贫穷，贫困"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2782,20 +4970,220 @@
                   "value": " with remarkable clarity."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**poor**「贫穷的，贫困的」，**religion**「宗教，宗教信仰」，**lazy**「懒散的)」，**anger**「/ angry adj.」，**annoyance**「生气，烦恼」，**indignation**「愤怒，愤慨，气愤/ indignant adj.」，**irritation**「激怒，恼怒，生气/ irritate v. 使发怒」，**resentment**「愤恨，不满/ resent v. 对…感到愤怒」，**rival**「竞争者」，**sake**「缘故，理由」，**for**「sake of 因为...」，**scale**「大小，规模」，**range**「幅度，范围」，**ages**「ranged from two to five. 两岁至五岁年龄段」，**sense**「感觉，观念v. 感觉到」，**sensation**「感觉」，**sensible**「明智的」，**sensitive**「[to]敏感的」，**nonsense**「胡说」，**sorrow**「悲伤」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "poor",
+                  "root": "poor",
+                  "contextMeaning": "贫穷的，贫困的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "religion",
+                  "root": "religion",
+                  "contextMeaning": "宗教，宗教信仰"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "lazy",
+                  "root": "lazy",
+                  "contextMeaning": "懒散的"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "anger",
+                  "root": "anger",
+                  "contextMeaning": "/ angry adj."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "annoyance",
+                  "root": "annoyance",
+                  "contextMeaning": "生气，烦恼"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "indignation",
+                  "root": "indignation",
+                  "contextMeaning": "愤怒，愤慨，气愤/ indignant adj."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "irritation",
+                  "root": "irritation",
+                  "contextMeaning": "激怒，恼怒，生气/ irritate v. 使发怒"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "resentment",
+                  "root": "resentment",
+                  "contextMeaning": "愤恨，不满/ resent v. 对…感到愤怒"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "rival",
+                  "root": "rival",
+                  "contextMeaning": "竞争者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sake",
+                  "root": "sake",
+                  "contextMeaning": "缘故，理由"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "for",
+                  "root": "for",
+                  "contextMeaning": "sake of 因为..."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "scale",
+                  "root": "scale",
+                  "contextMeaning": "大小，规模"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "range",
+                  "root": "range",
+                  "contextMeaning": "幅度，范围"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "ages",
+                  "root": "ages",
+                  "contextMeaning": "ranged from two to five. 两岁至五岁年龄段"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "text",
+                  "value": "sense",
+                  "bold": true
+                },
+                {
+                  "type": "text",
+                  "value": "（感觉，观念v. 感觉到）"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sensation",
+                  "root": "sensation",
+                  "contextMeaning": "感觉"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sensible",
+                  "root": "sensible",
+                  "contextMeaning": "明智的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sensitive",
+                  "root": "sensitive",
+                  "contextMeaning": "[to]敏感的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "nonsense",
+                  "root": "nonsense",
+                  "contextMeaning": "胡说"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "sorrow",
+                  "root": "sorrow",
+                  "contextMeaning": "悲伤"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3013,20 +5401,217 @@
                   "value": "） in his research paper."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**blue**「/ adj. 忧郁」，**grief**「悲伤」，**distress**「悲伤，痛苦」，**misery**「痛苦」，**suspicion**「怀疑，疑心」，**suspicious**「可疑的」，**terror**「恐怖，恐怖行为[ˈterər]」，**terrific**「极好的」，**territory**「领土，范围[ˈterətɔːri]」，**tide**「潮水，潮汐」，**tidy**「整洁的，整齐的」，**vessel**「器皿」，**victim**「牺牲品，受害者」，**scapegoat**「替罪羊」，**casualty**「受害者，伤亡人员」，**weave**「编法，织法」，**welfare**「幸福，安全与健康」，**social**「社会福利」，**witness**「目击者，见证人」，**evidence**「(evident adj.清楚的，显然的)」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "blue",
+                  "root": "blue",
+                  "contextMeaning": "/ adj. 忧郁"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "grief",
+                  "root": "grief",
+                  "contextMeaning": "悲伤"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "distress",
+                  "root": "distress",
+                  "contextMeaning": "悲伤，痛苦"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "misery",
+                  "root": "misery",
+                  "contextMeaning": "痛苦"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "suspicion",
+                  "root": "suspicion",
+                  "contextMeaning": "怀疑，疑心"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "suspicious",
+                  "root": "suspicious",
+                  "contextMeaning": "可疑的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "terror",
+                  "root": "terror",
+                  "contextMeaning": "恐怖，恐怖行为[ˈterər]"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "terrific",
+                  "root": "terrific",
+                  "contextMeaning": "极好的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "territory",
+                  "root": "territory",
+                  "contextMeaning": "领土，范围[ˈterətɔːri]"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tide",
+                  "root": "tide",
+                  "contextMeaning": "潮水，潮汐"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tidy",
+                  "root": "tidy",
+                  "contextMeaning": "整洁的，整齐的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vessel",
+                  "root": "vessel",
+                  "contextMeaning": "器皿"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "victim",
+                  "root": "victim",
+                  "contextMeaning": "牺牲品，受害者"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "scapegoat",
+                  "root": "scapegoat",
+                  "contextMeaning": "替罪羊"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "casualty",
+                  "root": "casualty",
+                  "contextMeaning": "受害者，伤亡人员"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "weave",
+                  "root": "weave",
+                  "contextMeaning": "编法，织法"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "welfare",
+                  "root": "welfare",
+                  "contextMeaning": "幸福，安全与健康"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "social",
+                  "root": "social",
+                  "contextMeaning": "社会福利"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "witness",
+                  "root": "witness",
+                  "contextMeaning": "目击者，见证人"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "evidence",
+                  "root": "evidence",
+                  "contextMeaning": "(evident adj.清楚的，显然的"
+                },
+                {
+                  "type": "text",
+                  "value": "」。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3244,20 +5829,217 @@
                   "value": " and meaningful."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**proof**「(prove v.证明，证实)」，**testimony**「(test v. 试验，考验，测验」，**academic**「学术的」，**vocational**「职业教育」，**vacation**「假期，休假」，**adequate**「适当地」，**adequately**「足够地，合格地」，**adequacy**「适当，恰当」，**casual**「偶然的，碰巧的」，**casually**「偶然地」，**consistent**「坚固的」，**inconsistent**「不一致的，不调和的」，**decent**「体面的，像样的」，**decency**「体面，正直」，**decently**「体面地，得体地，正直地」，**domestic**「国内的，家庭的」，**extinct**「灭绝的，耗尽的」，**extinction**「灭绝，消亡」，**extinguish**「熄灭，扑灭」，**distinguished**「卓越的」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "proof",
+                  "root": "proof",
+                  "contextMeaning": "(prove v.证明，证实"
+                },
+                {
+                  "type": "text",
+                  "value": "」，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "testimony",
+                  "root": "testimony",
+                  "contextMeaning": "(test v. 试验，考验，测验"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "academic",
+                  "root": "academic",
+                  "contextMeaning": "学术的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vocational",
+                  "root": "vocational",
+                  "contextMeaning": "职业教育"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vacation",
+                  "root": "vacation",
+                  "contextMeaning": "假期，休假"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adequate",
+                  "root": "adequate",
+                  "contextMeaning": "适当地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adequately",
+                  "root": "adequately",
+                  "contextMeaning": "足够地，合格地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "adequacy",
+                  "root": "adequacy",
+                  "contextMeaning": "适当，恰当"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "casual",
+                  "root": "casual",
+                  "contextMeaning": "偶然的，碰巧的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "casually",
+                  "root": "casually",
+                  "contextMeaning": "偶然地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "consistent",
+                  "root": "consistent",
+                  "contextMeaning": "坚固的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "inconsistent",
+                  "root": "inconsistent",
+                  "contextMeaning": "不一致的，不调和的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "decent",
+                  "root": "decent",
+                  "contextMeaning": "体面的，像样的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "decency",
+                  "root": "decency",
+                  "contextMeaning": "体面，正直"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "decently",
+                  "root": "decently",
+                  "contextMeaning": "体面地，得体地，正直地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "domestic",
+                  "root": "domestic",
+                  "contextMeaning": "国内的，家庭的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "extinct",
+                  "root": "extinct",
+                  "contextMeaning": "灭绝的，耗尽的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "extinction",
+                  "root": "extinction",
+                  "contextMeaning": "灭绝，消亡"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "extinguish",
+                  "root": "extinguish",
+                  "contextMeaning": "熄灭，扑灭"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "distinguished",
+                  "root": "distinguished",
+                  "contextMeaning": "卓越的"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3475,20 +6257,217 @@
                   "value": " analysis of the situation."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**extraordinary**「不平常的，特别的，非凡的」，**extreme**「极度的，极端的」，**insignificant**「无意义的，无足轻重的」，**significant**「重要的」，**liberal**「慷慨的」，**literate**「识字的」，**illiterate**「目不识丁的，文盲的」，**mild**「温暖的，暖和的」，**mental**「精神的，脑力的」，**mentally**「心理上，精神上」，**physical**「身体的」，**physically**「身体上」，**material**「重要的，物质的n. 原料」，**mortal**「致命的」，**neutral**「中立的」，**neutron**「[物]中子」，**optimistic**「乐观的」，**optimism**「乐观」，**optimal**「最佳的，最优的，最理想的」，**optional**「非强制的，可选择的，随意的」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "extraordinary",
+                  "root": "extraordinary",
+                  "contextMeaning": "不平常的，特别的，非凡的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "extreme",
+                  "root": "extreme",
+                  "contextMeaning": "极度的，极端的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "insignificant",
+                  "root": "insignificant",
+                  "contextMeaning": "无意义的，无足轻重的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "significant",
+                  "root": "significant",
+                  "contextMeaning": "重要的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "liberal",
+                  "root": "liberal",
+                  "contextMeaning": "慷慨的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "literate",
+                  "root": "literate",
+                  "contextMeaning": "识字的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "illiterate",
+                  "root": "illiterate",
+                  "contextMeaning": "目不识丁的，文盲的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "mild",
+                  "root": "mild",
+                  "contextMeaning": "温暖的，暖和的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "mental",
+                  "root": "mental",
+                  "contextMeaning": "精神的，脑力的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "mentally",
+                  "root": "mentally",
+                  "contextMeaning": "心理上，精神上"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "physical",
+                  "root": "physical",
+                  "contextMeaning": "身体的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "physically",
+                  "root": "physically",
+                  "contextMeaning": "身体上"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "material",
+                  "root": "material",
+                  "contextMeaning": "重要的，物质的n. 原料"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "mortal",
+                  "root": "mortal",
+                  "contextMeaning": "致命的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "neutral",
+                  "root": "neutral",
+                  "contextMeaning": "中立的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "neutron",
+                  "root": "neutron",
+                  "contextMeaning": "[物]中子"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "optimistic",
+                  "root": "optimistic",
+                  "contextMeaning": "乐观的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "optimism",
+                  "root": "optimism",
+                  "contextMeaning": "乐观"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "optimal",
+                  "root": "optimal",
+                  "contextMeaning": "最佳的，最优的，最理想的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "optional",
+                  "root": "optional",
+                  "contextMeaning": "非强制的，可选择的，随意的"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3706,20 +6685,217 @@
                   "value": " analysis of the situation."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**compulsory**「必修课」，**oral**「口头的，口述的」，**verbal**「语言交流」，**nonverbal**「非语言交流」，**body**「肢体语言」，**private**「私人的，个人的」，**privacy**「隐私」，**multinational**「跨国企业」，**joint**「合资企业」，**incorporated**「股份有限公司」，**profitable**「有利可图的，有益的」，**proficient**「精通的，熟练的」，**racial**「人种的，种族的」，**radial**「辐射状的」，**remote**「遥远的，偏僻的」，**rural**「乡村的」，**urban**「城市的」，**suburban**「城郊地区」，**shallow**「肤浅的，浅的」，**tedious**「乏味的，单调的」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "compulsory",
+                  "root": "compulsory",
+                  "contextMeaning": "必修课"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "oral",
+                  "root": "oral",
+                  "contextMeaning": "口头的，口述的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "verbal",
+                  "root": "verbal",
+                  "contextMeaning": "语言交流"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "nonverbal",
+                  "root": "nonverbal",
+                  "contextMeaning": "非语言交流"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "body",
+                  "root": "body",
+                  "contextMeaning": "肢体语言"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "private",
+                  "root": "private",
+                  "contextMeaning": "私人的，个人的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "privacy",
+                  "root": "privacy",
+                  "contextMeaning": "隐私"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "multinational",
+                  "root": "multinational",
+                  "contextMeaning": "跨国企业"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "joint",
+                  "root": "joint",
+                  "contextMeaning": "合资企业"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "incorporated",
+                  "root": "incorporated",
+                  "contextMeaning": "股份有限公司"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "profitable",
+                  "root": "profitable",
+                  "contextMeaning": "有利可图的，有益的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "proficient",
+                  "root": "proficient",
+                  "contextMeaning": "精通的，熟练的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "racial",
+                  "root": "racial",
+                  "contextMeaning": "人种的，种族的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "radial",
+                  "root": "radial",
+                  "contextMeaning": "辐射状的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "remote",
+                  "root": "remote",
+                  "contextMeaning": "遥远的，偏僻的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "rural",
+                  "root": "rural",
+                  "contextMeaning": "乡村的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "urban",
+                  "root": "urban",
+                  "contextMeaning": "城市的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "suburban",
+                  "root": "suburban",
+                  "contextMeaning": "城郊地区"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "shallow",
+                  "root": "shallow",
+                  "contextMeaning": "肤浅的，浅的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "tedious",
+                  "root": "tedious",
+                  "contextMeaning": "乏味的，单调的"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3937,20 +7113,217 @@
                   "value": " agreed that more research was needed."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**vacant**「空的，未占用的」，**valid**「有效的，有根据的」，**validate**「使有效，使合法化，批准，确认，证实」，**indefinite**「模糊的，不明确的」，**obscure**「不清楚的，昏暗的」，**vague**「模糊的」，**vulgar**「庸俗的」，**vigorous**「有力的」，**vertical**「垂直的」，**absolutely**「完全地，绝对地」，**definitely**「清楚地，当然，明确地」，**especially**「尤其，特别」，**exceedingly**「非常，及其」，**inevitably**「不可避免地，必然地」，**merely**「仅仅」，**nevertheless**「然而，尽管如此」，**particularly**「特别，尤其」，**presumably**「大概，可能」，**temporarily**「暂时地」，**typically**「通常，典型地」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "vacant",
+                  "root": "vacant",
+                  "contextMeaning": "空的，未占用的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "valid",
+                  "root": "valid",
+                  "contextMeaning": "有效的，有根据的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "validate",
+                  "root": "validate",
+                  "contextMeaning": "使有效，使合法化，批准，确认，证实"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "indefinite",
+                  "root": "indefinite",
+                  "contextMeaning": "模糊的，不明确的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "obscure",
+                  "root": "obscure",
+                  "contextMeaning": "不清楚的，昏暗的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vague",
+                  "root": "vague",
+                  "contextMeaning": "模糊的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vulgar",
+                  "root": "vulgar",
+                  "contextMeaning": "庸俗的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vigorous",
+                  "root": "vigorous",
+                  "contextMeaning": "有力的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vertical",
+                  "root": "vertical",
+                  "contextMeaning": "垂直的"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "absolutely",
+                  "root": "absolutely",
+                  "contextMeaning": "完全地，绝对地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "definitely",
+                  "root": "definitely",
+                  "contextMeaning": "清楚地，当然，明确地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "especially",
+                  "root": "especially",
+                  "contextMeaning": "尤其，特别"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "exceedingly",
+                  "root": "exceedingly",
+                  "contextMeaning": "非常，及其"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "inevitably",
+                  "root": "inevitably",
+                  "contextMeaning": "不可避免地，必然地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "merely",
+                  "root": "merely",
+                  "contextMeaning": "仅仅"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "nevertheless",
+                  "root": "nevertheless",
+                  "contextMeaning": "然而，尽管如此"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "particularly",
+                  "root": "particularly",
+                  "contextMeaning": "特别，尤其"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "presumably",
+                  "root": "presumably",
+                  "contextMeaning": "大概，可能"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "temporarily",
+                  "root": "temporarily",
+                  "contextMeaning": "暂时地"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "typically",
+                  "root": "typically",
+                  "contextMeaning": "通常，典型地"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4128,20 +7501,177 @@
                   "value": " fascinated him from the start."
                 }
               ]
-            },
-            {
-              "segments": [
-                {
-                  "type": "text",
-                  "value": "**ultimately**「最后，终于，根本，基本上」，**vice**「n.」，**learn**「face failures」，**language**「gives a candidate the edge when other qu」，**minority**「in the last six years.」，**problems**「from mass migration movements—themselves」，**nowadays**「modern means of transport.」，**eastern**「in which it once thrived.」，**using**「measures. You can teach your dog its sub」，**show**「to you.」，**control**「energy costs of industries that make rec」，**more**「raw material.」，**panels**「convert the sun's energy to electrical p」，**after**「get elected」，**presence**「social support helps people fend off ill」，**support**「poor health more likely.」。"
-                }
-              ]
             }
           ]
         },
         {
           "type": "chinese",
-          "paragraphs": []
+          "paragraphs": [
+            {
+              "segments": [
+                {
+                  "type": "vocab",
+                  "word": "ultimately",
+                  "root": "ultimately",
+                  "contextMeaning": "最后，终于，根本，基本上"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "vice",
+                  "root": "vice",
+                  "contextMeaning": "n."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "learn",
+                  "root": "learn",
+                  "contextMeaning": "face failures"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "language",
+                  "root": "language",
+                  "contextMeaning": "gives a candidate the edge when other qu"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "minority",
+                  "root": "minority",
+                  "contextMeaning": "in the last six years."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "problems",
+                  "root": "problems",
+                  "contextMeaning": "from mass migration movements—themselves"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "nowadays",
+                  "root": "nowadays",
+                  "contextMeaning": "modern means of transport."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "eastern",
+                  "root": "eastern",
+                  "contextMeaning": "in which it once thrived."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "using",
+                  "root": "using",
+                  "contextMeaning": "measures. You can teach your dog its sub"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "show",
+                  "root": "show",
+                  "contextMeaning": "to you."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "control",
+                  "root": "control",
+                  "contextMeaning": "energy costs of industries that make rec"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "more",
+                  "root": "more",
+                  "contextMeaning": "raw material."
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "panels",
+                  "root": "panels",
+                  "contextMeaning": "convert the sun's energy to electrical p"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "after",
+                  "root": "after",
+                  "contextMeaning": "get elected"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "presence",
+                  "root": "presence",
+                  "contextMeaning": "social support helps people fend off ill"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "vocab",
+                  "word": "support",
+                  "root": "support",
+                  "contextMeaning": "poor health more likely."
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
