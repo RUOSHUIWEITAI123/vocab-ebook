@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    assetsInlineLimit: 0,
   },
   server: {
     port: 3000,
@@ -30,8 +31,17 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,json,png,svg,woff2}'],
+        globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
+        globIgnores: ['**/dict/*.json'],
         runtimeCaching: [
+          {
+            urlPattern: /\/data\/dict\/.*\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'dict-cache',
+              expiration: { maxEntries: 30, maxAgeSeconds: 30 * 24 * 60 * 60 },
+            },
+          },
           {
             urlPattern: /\/data\/.*\.json$/,
             handler: 'CacheFirst',
