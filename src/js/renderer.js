@@ -151,10 +151,10 @@ function renderParagraph(para) {
     } else if (seg.type === 'text') {
       span.className = 'text';
       if (seg.bold) span.classList.add('bold');
-      span.textContent = seg.value;
+      span.innerHTML = renderBoldMarkers(seg.value);
     } else {
       span.className = 'text';
-      span.textContent = seg.value || '';
+      span.innerHTML = renderBoldMarkers(seg.value || '');
     }
 
     p.appendChild(span);

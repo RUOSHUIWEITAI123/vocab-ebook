@@ -52,11 +52,10 @@ export function initDrawer(index, dataset) {
     if (!isTouchDevice) {
       const paraEl = e.target.closest('.para.has-translation');
       if (paraEl && !e.target.closest('.vocab')) {
-        // Check if we're clicking on a specific word or just the paragraph
         const clickedWord = getWordAtClick(e);
         if (clickedWord) {
           const lower = clickedWord.toLowerCase();
-          // Check 580-word list first
+          // Check if word is in any known dictionary
           if (vocabIndex[lower] || findRootInIndex(lower)) {
             const root = findRootInIndex(lower) || lower;
             showVocabDrawer(root, clickedWord, null);
@@ -68,11 +67,9 @@ export function initDrawer(index, dataset) {
             showOfflineDrawer(clickedWord, offlineResult.meaning);
             return;
           }
-          // Fallback to online API
-          showLookupDrawer(clickedWord);
-          return;
+          // Word not in any dictionary → show sentence translation instead
         }
-        // No specific word → sentence translation
+        // Show sentence translation
         const englishText = getParagraphEnglishText(paraEl);
         const chineseHtml = paraEl.dataset.translationHtml;
         if (englishText && chineseHtml) {
