@@ -4,6 +4,7 @@
  */
 
 let vocabIndex = {};
+let extraDict = {};  // Offline dictionary for non-580 words
 let isVisible = false;
 let isTouchDevice = false;
 
@@ -14,7 +15,10 @@ export function initDrawer(index) {
   vocabIndex = index;
   isTouchDevice = 'ontouchstart' in window;
 
-  // Load persisted cache
+  // Load offline extra dictionary
+  loadExtraDict();
+
+  // Load persisted API cache
   try {
     const saved = JSON.parse(localStorage.getItem('vocab-lookup-cache') || '{}');
     for (const [k, v] of Object.entries(saved)) {
@@ -48,12 +52,19 @@ export function initDrawer(index) {
         const clickedWord = getWordAtClick(e);
         if (clickedWord) {
           const lower = clickedWord.toLowerCase();
+          // Check 580-word list first
           if (vocabIndex[lower] || findRootInIndex(lower)) {
             const root = findRootInIndex(lower) || lower;
             showVocabDrawer(root, clickedWord, null);
             return;
           }
-          // Not in 580 list → look up online
+          // Check offline extra dictionary
+          const offlineResult = lookupOffline(clickedWord);
+          if (offlineResult) {
+            showOfflineDrawer(clickedWord, offlineResult.meaning);
+            return;
+          }
+          // Fallback to online API
           showLookupDrawer(clickedWord);
           return;
         }
@@ -88,7 +99,12 @@ export function initDrawer(index) {
             const root = findRootInIndex(lower) || lower;
             showVocabDrawer(root, word, null);
           } else {
-            showLookupDrawer(word);
+            const off = lookupOffline(word);
+            if (off) {
+              showOfflineDrawer(word, off.meaning);
+            } else {
+              showLookupDrawer(word);
+            }
           }
         } else {
           // Try sentence translation
@@ -153,6 +169,24 @@ function showVocabDrawer(root, word, contextMeaning) {
     <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
 
   content.innerHTML = html;
+  document.getElementById('drawer-speak-btn').addEventListener('click', () => speakWord(word));
+  show();
+}
+
+// ── Offline Dictionary Drawer ────────────────────────────
+
+function showOfflineDrawer(word, meaning) {
+  const content = document.getElementById('drawer-content');
+  content.innerHTML = `
+    <div class="drawer-word">${escapeHtml(word)}</div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">离线词典</div>
+      <div class="drawer-context-meaning">${escapeHtml(meaning)}</div>
+    </div>
+    <div class="drawer-section" style="margin-top:4px;">
+      <div class="drawer-section-label" style="font-size:0.7rem;color:var(--text-secondary);">（来自内置词库，无需联网）</div>
+    </div>
+    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
   document.getElementById('drawer-speak-btn').addEventListener('click', () => speakWord(word));
   show();
 }
@@ -288,6 +322,29 @@ function showSentenceDrawer(englishText, chineseHtml) {
 }
 
 // ── Helpers ──────────────────────────────────────────────
+
+async function loadExtraDict() {
+  try {
+    const resp = await fetch('/data/extra-dict.json');
+    if (resp.ok) {
+      extraDict = await resp.json();
+      console.log(`📚 Offline dictionary loaded: ${Object.keys(extraDict).length} words`);
+    }
+  } catch (e) {
+    console.log('Offline dictionary not available, using API fallback');
+  }
+}
+
+/** Look up word in offline dict, return meaning or null */
+function lookupOffline(word) {
+  const lower = word.toLowerCase().trim();
+  // Check 580-word index first
+  const root = findRootInIndex(lower);
+  if (root) return { meaning: (vocabIndex[root] || [''])[0], source: '580词表' };
+  // Check extra dictionary
+  if (extraDict[lower]) return { meaning: extraDict[lower], source: '离线词典' };
+  return null;
+}
 
 function findRootInIndex(word) {
   if (vocabIndex[word]) return word;

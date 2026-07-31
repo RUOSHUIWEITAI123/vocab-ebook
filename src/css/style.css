@@ -259,7 +259,16 @@ body {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 32px 24px 80px;
-  scroll-behavior: smooth;
+}
+
+/* Chapter transition */
+.part {
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Loading */
