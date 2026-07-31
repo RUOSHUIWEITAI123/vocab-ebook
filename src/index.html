@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-  <meta name="description" content="交互式考研英语词汇学习电子书 — 580词涵括文章" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="apple-touch-icon" href="/icons/icon-192.png" />
@@ -12,13 +11,10 @@
 </head>
 <body>
   <div class="app-container">
-    <!-- Sidebar TOC -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <h1 class="book-title">580词<br>电子书</h1>
-        <div class="progress-bar-container">
-          <div class="progress-bar" id="progress-bar"></div>
-        </div>
+        <h1 class="book-title">📚 英语<br>电子书</h1>
+        <div class="progress-bar-container"><div class="progress-bar" id="progress-bar"></div></div>
         <span class="progress-text" id="progress-text">0 / 41</span>
       </div>
       <nav class="toc-list" id="toc-list"></nav>
@@ -28,33 +24,25 @@
       </div>
     </aside>
 
-    <!-- Mobile hamburger -->
     <button class="hamburger" id="hamburger" aria-label="目录">☰</button>
 
-    <!-- Main reading area -->
     <main class="reader-viewport" id="reader-viewport">
+      <nav class="top-tabs" id="top-tabs">
+        <button class="top-tab active" data-dataset="kaoyan" onclick="window.switchTab('kaoyan')">📚 考研580词</button>
+        <button class="top-tab" data-dataset="cet4" onclick="window.switchTab('cet4')">📘 四级词汇</button>
+      </nav>
       <div class="reader-toolbar" id="reader-toolbar">
-        <div class="toolbar-left">
-          <span class="current-part-label" id="current-part-label">Part 1</span>
-        </div>
+        <div class="toolbar-left"><span class="current-part-label" id="current-part-label">Part 1</span></div>
         <div class="toolbar-right">
           <button class="icon-btn" id="font-minus" title="缩小字号">A−</button>
           <button class="icon-btn" id="font-plus" title="放大字号">A+</button>
           <button class="icon-btn theme-btn" id="theme-toggle" title="切换主题">🌓</button>
         </div>
       </div>
-
       <div class="reader-content" id="reader-content">
-        <div class="loading" id="loading">
-          <div class="spinner"></div>
-          <p>加载中...</p>
-        </div>
-        <div class="error" id="error" style="display:none">
-          <p>⚠️ 内容加载失败，请刷新页面重试。</p>
-        </div>
+        <div class="loading" id="loading"><div class="spinner"></div><p>加载中...</p></div>
+        <div class="error" id="error" style="display:none"><p>⚠️ 内容加载失败，请刷新页面重试。</p></div>
       </div>
-
-      <!-- Part navigation -->
       <div class="part-navigation" id="part-navigation">
         <button class="nav-btn" id="prev-part">← 上一章</button>
         <span class="nav-label" id="nav-label"></span>
@@ -63,51 +51,31 @@
     </main>
   </div>
 
-  <!-- Translation Drawer -->
   <div class="drawer-overlay" id="drawer-overlay"></div>
   <div class="drawer" id="drawer">
     <div class="drawer-handle"></div>
     <div class="drawer-content" id="drawer-content"></div>
   </div>
 
-  <!-- Settings Panel -->
   <div class="settings-overlay" id="settings-overlay"></div>
   <div class="settings-panel" id="settings-panel">
     <h3>阅读设置</h3>
-    <div class="settings-group">
-      <label>主题</label>
-      <div class="theme-options">
-        <button class="theme-option active" data-theme="light">☀️ 护眼</button>
-        <button class="theme-option" data-theme="dark">🌙 夜间</button>
-        <button class="theme-option" data-theme="sepia">📜 仿纸</button>
-      </div>
-    </div>
-    <div class="settings-group">
-      <label>字号</label>
-      <div class="font-size-controls">
-        <button id="settings-font-minus">A−</button>
-        <span id="settings-font-size">18px</span>
-        <button id="settings-font-plus">A+</button>
-      </div>
-    </div>
+    <div class="settings-group"><label>主题</label><div class="theme-options">
+      <button class="theme-option active" data-theme="light">☀️ 护眼</button>
+      <button class="theme-option" data-theme="dark">🌙 夜间</button>
+      <button class="theme-option" data-theme="sepia">📜 仿纸</button>
+    </div></div>
+    <div class="settings-group"><label>字号</label><div class="font-size-controls">
+      <button id="settings-font-minus">A−</button><span id="settings-font-size">18px</span><button id="settings-font-plus">A+</button>
+    </div></div>
     <button class="settings-close" id="settings-close">关闭</button>
   </div>
 
-  <!-- Word Bank Panel -->
   <div class="wordbank-overlay" id="wordbank-overlay"></div>
   <div class="wordbank-panel" id="wordbank-panel">
-    <div class="wordbank-header">
-      <h3>📖 生词本 <span id="wordbank-count">(0)</span></h3>
-      <button class="wordbank-close" id="wordbank-close">✕</button>
-    </div>
-    <div class="wordbank-tabs">
-      <button class="wb-tab active" data-tab="list">单词列表</button>
-      <button class="wb-tab" data-tab="review">复习模式</button>
-    </div>
-    <div class="wordbank-body" id="wordbank-body">
-      <div class="wb-list" id="wb-list"></div>
-      <div class="wb-review" id="wb-review" style="display:none"></div>
-    </div>
+    <div class="wordbank-header"><h3>📖 生词本 <span id="wordbank-count">(0)</span></h3><button class="wordbank-close" id="wordbank-close">✕</button></div>
+    <div class="wordbank-tabs"><button class="wb-tab active" data-tab="list">单词列表</button><button class="wb-tab" data-tab="review">复习模式</button></div>
+    <div class="wordbank-body" id="wordbank-body"><div class="wb-list" id="wb-list"></div><div class="wb-review" id="wb-review" style="display:none"></div></div>
   </div>
 
   <script type="module" src="./js/app.js"></script>

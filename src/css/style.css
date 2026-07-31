@@ -197,6 +197,34 @@ body {
   justify-content: center;
 }
 
+/* ── Top Tabs ─────────────────────────────────────────── */
+.top-tabs {
+  display: flex;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+  padding: 4px 8px;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.top-tab {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+}
+.top-tab:hover { background: rgba(128,128,128,0.08); }
+.top-tab.active {
+  background: var(--vocab-color);
+  color: #fff;
+  font-weight: 600;
+}
+
 /* ── Reader ────────────────────────────────────────────── */
 .reader-viewport {
   flex: 1;
@@ -404,6 +432,30 @@ body {
 /* ── Sections ──────────────────────────────────────────── */
 .section-chinese {
   display: none;
+}
+
+/* ── Vocab List (CET-4) ──────────────────────────────── */
+.vocab-list-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--divider);
+}
+.vocab-list-item {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.section-context .para {
+  margin-bottom: 16px;
+}
+.section-context .vocab {
+  color: var(--vocab-color);
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1.5px dashed var(--vocab-underline);
 }
 
 /* ── Grammar Notes ─────────────────────────────────────── */

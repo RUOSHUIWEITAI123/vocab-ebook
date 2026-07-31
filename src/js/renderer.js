@@ -5,7 +5,7 @@
 /**
  * Render a single part into the container.
  */
-export function renderPart(part, container) {
+export function renderPart(part, container, dataset) {
   const el = document.createElement('div');
   el.className = 'part';
   el.id = part.id;
@@ -24,8 +24,10 @@ export function renderPart(part, container) {
 
   container.appendChild(el);
 
-  // Link English paragraphs to Chinese translations
-  linkTranslations(el);
+  // Link English paragraphs to Chinese translations (kaoyan only)
+  if (part.sections.some(s => s.type === 'english')) {
+    linkTranslations(el);
+  }
 }
 
 function linkTranslations(partEl) {
@@ -75,6 +77,52 @@ function renderSection(section) {
     return renderGrammarNotes(section.notes);
   }
 
+  // CET-4 vocab list section
+  if (section.type === 'vocab-list') {
+    const div = document.createElement('div');
+    div.className = 'section section-vocab-list';
+    const title = document.createElement('h3');
+    title.className = 'vocab-list-title';
+    title.textContent = section.title || '';
+    div.appendChild(title);
+    for (const w of section.words) {
+      const item = document.createElement('div');
+      item.className = 'vocab-list-item';
+      item.innerHTML = `<span class="vocab" data-word="${w.word}" data-root="${w.word.toLowerCase()}" data-meaning="${w.meaning}">${w.word}</span> <span class="text">${w.pos}. ${w.meaning}</span>`;
+      div.appendChild(item);
+    }
+    return div;
+  }
+
+  // CET-4 context section
+  if (section.type === 'context') {
+    const div = document.createElement('div');
+    div.className = 'section section-context';
+    const enP = document.createElement('p');
+    enP.className = 'para has-translation';
+    enP.innerHTML = section.english;
+    // Mark vocab words in context
+    for (const w of section.words) {
+      if (w.word) {
+        enP.innerHTML = enP.innerHTML.replace(
+          new RegExp(`\\b(${w.word})\\b`, 'gi'),
+          `<span class="vocab" data-word="$1" data-root="${w.word.toLowerCase()}" data-meaning="${w.meaning}">$1</span>`
+        );
+      }
+    }
+    enP.dataset.translationHtml = escapeHtml(section.chinese || '');
+    div.appendChild(enP);
+    if (section.chinese) {
+      const cnP = document.createElement('p');
+      cnP.className = 'para section-chinese';
+      cnP.textContent = section.chinese;
+      cnP.style.display = 'none';
+      div.appendChild(cnP);
+    }
+    return div;
+  }
+
+  // Standard english/chinese sections (kaoyan)
   const div = document.createElement('div');
   div.className = `section section-${section.type}`;
   div.dataset.sectionType = section.type;

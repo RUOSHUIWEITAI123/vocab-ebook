@@ -5,17 +5,19 @@
 import { toggleWord, isInBank, initWordBank, onUpdate } from './wordbank.js';
 
 let vocabIndex = {};
-let extraDict = {};  // Offline dictionary for non-580 words
+let extraDict = {};
 let isVisible = false;
 let isTouchDevice = false;
+let currentDataset = 'kaoyan';
 
 // Cache for API lookups (persisted to localStorage)
 const lookupCache = new Map();
 
-export function initDrawer(index) {
-  vocabIndex = index;
+export function initDrawer(index, dataset) {
+  vocabIndex = index || {};
   isTouchDevice = 'ontouchstart' in window;
   initWordBank();
+  currentDataset = dataset || 'kaoyan';
 
   // Load offline extra dictionary
   loadExtraDict();
