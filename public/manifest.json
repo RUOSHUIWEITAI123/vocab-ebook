@@ -1,0 +1,22 @@
+{
+  "name": "580词考研英语电子书",
+  "short_name": "580词电子书",
+  "description": "交互式考研英语词汇学习电子书 — 点击单词查看翻译",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf7",
+  "theme_color": "#2e7d32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "vocab-ebook",
+  "version": "1.0.0",
+  "description": "580词考研英语交互式电子书",
+  "type": "module",
+  "scripts": {
+    "build:content": "node scripts/extract-vocab.js && node scripts/parse-content.js",
+    "dev": "npm run build:content && vite",
+    "build": "npm run build:content && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.0"
+  }
+}
