@@ -111,12 +111,14 @@ function lookupWord(word) {
 
 // ── Drawer Views ──────────────────────────────────────
 function showVocab(root, word, ctxMeaning) {
-  const meanings = vocabIndex[root];
-  if (!meanings?.length) return;
+  let m = vocabIndex[root];
+  if (!m) return;
+  const meanings = Array.isArray(m) ? m : m.split(/[;；]/g).filter(Boolean);
+  const firstMeaning = meanings[0] || '';
   let h = `<div class="drawer-word">${esc(word)}</div>`;
   if (ctxMeaning) h += `<div class="drawer-section"><div class="drawer-section-label">文中释义</div><div class="drawer-context-meaning">${esc(ctxMeaning)}</div></div>`;
-  h += `<div class="drawer-section"><div class="drawer-section-label">完整释义</div><ul class="drawer-meanings-list">${meanings.map(m => `<li>${esc(m)}</li>`).join('')}</ul></div>`;
-  h += `<div class="drawer-actions"><button class="drawer-speak-btn" id="ds">🔊</button><button class="drawer-bank-btn" id="db" data-root="${esc(root)}" data-word="${esc(word)}" data-meaning="${esc(ctxMeaning||meanings[0]||'')}">${isInBank(root)?'✅已加入':'📖生词本'}</button></div>`;
+  h += `<div class="drawer-section"><div class="drawer-section-label">完整释义</div><ul class="drawer-meanings-list">${meanings.map(x => `<li>${esc(x.trim())}</li>`).join('')}</ul></div>`;
+  h += `<div class="drawer-actions"><button class="drawer-speak-btn" id="ds">🔊</button><button class="drawer-bank-btn" id="db" data-root="${esc(root)}" data-word="${esc(word)}" data-meaning="${esc(ctxMeaning||firstMeaning)}">${isInBank(root)?'✅已加入':'📖生词本'}</button></div>`;
   document.getElementById('drawer-content').innerHTML = h;
   document.getElementById('ds').onclick = () => speak(word);
   document.getElementById('db').onclick = function() {

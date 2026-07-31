@@ -56,6 +56,7 @@ async function switchDataset(name) {
   document.getElementById('toc-list').innerHTML = contentData.parts.map((part, i) =>
     `<button class="toc-item" data-index="${i}">${part.partLabel || 'Part ' + part.number}</button>`
   ).join('');
+  initDrawer(vocabIndex, name);
   navigateToPart(0);
 }
 
