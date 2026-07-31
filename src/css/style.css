@@ -316,8 +316,19 @@ body {
   hyphens: auto;
 }
 
+.section-english .para {
+  cursor: text;
+}
+
 .para .text {
   color: var(--text);
+  transition: background 0.1s;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.para .text:hover {
+  background: rgba(128,128,128,0.06);
 }
 
 .para .text.bold {

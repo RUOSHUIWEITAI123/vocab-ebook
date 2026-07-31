@@ -1,14 +1,26 @@
 /**
  * Bottom drawer for vocabulary translation + sentence translation display.
+ * Supports: 580-word local index + online translation API for any word.
  */
 
 let vocabIndex = {};
 let isVisible = false;
 let isTouchDevice = false;
 
+// Cache for API lookups (persisted to localStorage)
+const lookupCache = new Map();
+
 export function initDrawer(index) {
   vocabIndex = index;
   isTouchDevice = 'ontouchstart' in window;
+
+  // Load persisted cache
+  try {
+    const saved = JSON.parse(localStorage.getItem('vocab-lookup-cache') || '{}');
+    for (const [k, v] of Object.entries(saved)) {
+      lookupCache.set(k, v);
+    }
+  } catch (e) { /* ignore */ }
 
   const readerContent = document.getElementById('reader-content');
   const drawerOverlay = document.getElementById('drawer-overlay');
@@ -16,13 +28,7 @@ export function initDrawer(index) {
 
   // Main click handler (delegated)
   readerContent.addEventListener('click', (e) => {
-    // If drawer is already open and user clicks non-vocab, non-para area, close it
-    if (isVisible && !e.target.closest('.vocab') && !e.target.closest('.para')) {
-      hideDrawer();
-      return;
-    }
-
-    // Click on vocabulary word
+    // Click on vocabulary word (green)
     const vocabEl = e.target.closest('.vocab');
     if (vocabEl) {
       e.preventDefault();
@@ -37,60 +43,68 @@ export function initDrawer(index) {
     // Click on English paragraph for sentence translation
     if (!isTouchDevice) {
       const paraEl = e.target.closest('.para.has-translation');
-      if (paraEl) {
+      if (paraEl && !e.target.closest('.vocab')) {
+        // Check if we're clicking on a specific word or just the paragraph
+        const clickedWord = getWordAtClick(e);
+        if (clickedWord) {
+          const lower = clickedWord.toLowerCase();
+          if (vocabIndex[lower] || findRootInIndex(lower)) {
+            const root = findRootInIndex(lower) || lower;
+            showVocabDrawer(root, clickedWord, null);
+            return;
+          }
+          // Not in 580 list → look up online
+          showLookupDrawer(clickedWord);
+          return;
+        }
+        // No specific word → sentence translation
         const englishText = getParagraphEnglishText(paraEl);
         const chineseHtml = paraEl.dataset.translationHtml;
         if (englishText && chineseHtml) {
-          if (isVisible) {
-            hideDrawer();
-            return;
-          }
+          if (isVisible) { hideDrawer(); return; }
           showSentenceDrawer(englishText, chineseHtml);
           return;
         }
       }
+    }
 
-      // "Click any word" feature — desktop only (single click)
-      const word = getWordAtClick(e);
-      if (word && vocabIndex[word.toLowerCase()]) {
-        showVocabDrawer(word.toLowerCase(), word, null);
-      }
+    // Close drawer if open and clicking elsewhere
+    if (isVisible && !e.target.closest('.vocab') && !e.target.closest('.para')) {
+      hideDrawer();
     }
   });
 
-  // Touch device: sentence translation on double-tap
+  // Touch device: word lookup on double-tap
   if (isTouchDevice) {
     let lastTap = 0;
-    let lastTarget = null;
     readerContent.addEventListener('click', (e) => {
       if (e.target.closest('.vocab')) return;
-
       const now = Date.now();
-      const sameTarget = e.target === lastTarget || e.target.closest('.para') === lastTarget?.closest('.para');
-
-      if (now - lastTap < 400 && sameTarget) {
-        // Double tap detected
-        // First try: word detection
+      if (now - lastTap < 400) {
         const word = getWordAtClick(e);
-        if (word && vocabIndex[word.toLowerCase()]) {
-          showVocabDrawer(word.toLowerCase(), word, null);
-          lastTap = 0;
-          return;
-        }
-        // Second try: sentence translation
-        const paraEl = e.target.closest('.para.has-translation');
-        if (paraEl) {
-          const englishText = getParagraphEnglishText(paraEl);
-          const chineseHtml = paraEl.dataset.translationHtml;
-          if (englishText && chineseHtml) {
-            showSentenceDrawer(englishText, chineseHtml);
-            lastTap = 0;
-            return;
+        if (word) {
+          const lower = word.toLowerCase();
+          if (vocabIndex[lower] || findRootInIndex(lower)) {
+            const root = findRootInIndex(lower) || lower;
+            showVocabDrawer(root, word, null);
+          } else {
+            showLookupDrawer(word);
+          }
+        } else {
+          // Try sentence translation
+          const paraEl = e.target.closest('.para.has-translation');
+          if (paraEl) {
+            const englishText = getParagraphEnglishText(paraEl);
+            const chineseHtml = paraEl.dataset.translationHtml;
+            if (englishText && chineseHtml) {
+              showSentenceDrawer(englishText, chineseHtml);
+            }
           }
         }
+        lastTap = 0;
+        return;
       }
       lastTap = now;
-      lastTarget = e.target;
     });
   }
 
@@ -99,9 +113,7 @@ export function initDrawer(index) {
 
   // Close via ESC
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && isVisible) {
-      hideDrawer();
-    }
+    if (e.key === 'Escape' && isVisible) hideDrawer();
   });
 
   // Swipe down on drawer to close
@@ -109,23 +121,18 @@ export function initDrawer(index) {
   drawer.addEventListener('touchstart', (e) => {
     touchStartY = e.touches[0].clientY;
   }, { passive: true });
-
   drawer.addEventListener('touchmove', (e) => {
-    const deltaY = e.touches[0].clientY - touchStartY;
-    if (deltaY > 40) {
-      hideDrawer();
-    }
+    if (e.touches[0].clientY - touchStartY > 40) hideDrawer();
   }, { passive: true });
 }
 
-// ── Vocabulary Drawer ────────────────────────────────────
+// ── Vocab Drawer (580-word index) ───────────────────────
 
 function showVocabDrawer(root, word, contextMeaning) {
   const meanings = vocabIndex[root];
   if (!meanings || meanings.length === 0) return;
 
   const content = document.getElementById('drawer-content');
-
   let html = `<div class="drawer-word">${escapeHtml(word)}</div>`;
 
   if (contextMeaning) {
@@ -133,35 +140,142 @@ function showVocabDrawer(root, word, contextMeaning) {
       <div class="drawer-section">
         <div class="drawer-section-label">文中释义</div>
         <div class="drawer-context-meaning">${escapeHtml(contextMeaning)}</div>
-      </div>
-    `;
+      </div>`;
   }
 
   html += `
     <div class="drawer-section">
-      <div class="drawer-section-label">完整释义</div>
+      <div class="drawer-section-label">完整释义（580词表）</div>
       <ul class="drawer-meanings-list">
         ${meanings.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
       </ul>
     </div>
-    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>
-  `;
+    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
 
   content.innerHTML = html;
-
-  document.getElementById('drawer-speak-btn').addEventListener('click', () => {
-    speakWord(word);
-  });
-
+  document.getElementById('drawer-speak-btn').addEventListener('click', () => speakWord(word));
   show();
+}
+
+// ── Online Lookup Drawer (any word) ──────────────────────
+
+async function showLookupDrawer(word) {
+  const content = document.getElementById('drawer-content');
+  const lower = word.toLowerCase().trim();
+
+  // Show loading
+  content.innerHTML = `
+    <div class="drawer-word">${escapeHtml(word)}</div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">查询中...</div>
+      <div class="drawer-context-meaning" style="text-align:center;color:var(--text-secondary);">⏳ 正在获取翻译</div>
+    </div>`;
+  show();
+
+  // Check cache first
+  if (lookupCache.has(lower)) {
+    renderLookupResult(word, lookupCache.get(lower));
+    return;
+  }
+
+  // Try online API
+  try {
+    const result = await fetchTranslation(lower);
+    lookupCache.set(lower, result);
+    persistCache();
+    renderLookupResult(word, result);
+  } catch (err) {
+    renderLookupError(word, err.message);
+  }
+}
+
+async function fetchTranslation(word) {
+  // Use MyMemory API with context wrapping for better single-word accuracy
+  const query = `The word "${word}" means`;
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(query)}&langpair=en|zh`;
+  const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
+  if (!resp.ok) throw new Error('网络异常');
+  const data = await resp.json();
+
+  if (data.responseStatus === 200 && data.responseData?.translatedText) {
+    const translated = data.responseData.translatedText.trim();
+    // Format: “X”一词的意思是 → extract X
+    const idx = translated.indexOf('一词的意思是'); // 一词的意思是
+    let result = '';
+    if (idx > 0) {
+      result = translated.substring(0, idx).trim();
+      // Strip surrounding quote characters
+      if (result.length > 1) {
+        result = result.substring(1, result.length - 1).trim();
+      }
+    }
+    if (!result && translated.length < 15) {
+      result = translated;
+    }
+    if (result && result.length < 20) {
+      return { translation: result, match: data.responseData.match || 0 };
+    }
+    // Fallback: use raw translation if clean and short
+    if (translated.toLowerCase() !== word.toLowerCase() && translated.length < 20) {
+      return { translation: translated, match: data.responseData.match || 0 };
+    }
+    return { translation: null, note: '未找到准确翻译' };
+  }
+
+  throw new Error('未找到翻译');
+}
+
+function renderLookupResult(word, result) {
+  const content = document.getElementById('drawer-content');
+  let html = `<div class="drawer-word">${escapeHtml(word)}</div>`;
+
+  if (result.translation) {
+    html += `
+      <div class="drawer-section">
+        <div class="drawer-section-label">中文翻译</div>
+        <div class="drawer-context-meaning">${escapeHtml(result.translation)}</div>
+      </div>`;
+    if (result.match !== undefined && result.match < 0.8) {
+      html += `<div class="drawer-section" style="font-size:0.7rem;color:var(--text-secondary);margin-top:-8px;">匹配度: ${Math.round(result.match * 100)}% (仅供参考)</div>`;
+    }
+  } else if (result.note) {
+    html += `
+      <div class="drawer-section">
+        <div class="drawer-context-meaning" style="color:var(--text-secondary);">${escapeHtml(result.note)}</div>
+      </div>`;
+  }
+
+  html += `
+    <div class="drawer-section" style="margin-top:8px;">
+      <div class="drawer-section-label" style="font-size:0.7rem;color:var(--text-secondary);">（该词不在580词表中）</div>
+    </div>
+    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
+
+  content.innerHTML = html;
+  const speakBtn = document.getElementById('drawer-speak-btn');
+  if (speakBtn) speakBtn.addEventListener('click', () => speakWord(word));
+}
+
+function renderLookupError(word, msg) {
+  const content = document.getElementById('drawer-content');
+  content.innerHTML = `
+    <div class="drawer-word">${escapeHtml(word)}</div>
+    <div class="drawer-section">
+      <div class="drawer-context-meaning" style="color:var(--text-secondary);">
+        ⚠️ 翻译服务暂不可用（${escapeHtml(msg)}）<br>
+        <small>请检查网络连接后重试</small>
+      </div>
+    </div>
+    <button class="drawer-speak-btn" id="drawer-speak-btn">🔊 朗读</button>`;
+  const speakBtn = document.getElementById('drawer-speak-btn');
+  if (speakBtn) speakBtn.addEventListener('click', () => speakWord(word));
 }
 
 // ── Sentence Translation Drawer ──────────────────────────
 
 function showSentenceDrawer(englishText, chineseHtml) {
   const content = document.getElementById('drawer-content');
-
-  const html = `
+  content.innerHTML = `
     <div class="drawer-section">
       <div class="drawer-section-label">📝 原文</div>
       <div class="drawer-sentence-en">${escapeHtml(englishText)}</div>
@@ -169,43 +283,42 @@ function showSentenceDrawer(englishText, chineseHtml) {
     <div class="drawer-section">
       <div class="drawer-section-label">🈯 译文</div>
       <div class="drawer-sentence-cn">${chineseHtml}</div>
-    </div>
-  `;
-
-  content.innerHTML = html;
+    </div>`;
   show();
 }
 
 // ── Helpers ──────────────────────────────────────────────
 
+function findRootInIndex(word) {
+  if (vocabIndex[word]) return word;
+  const rules = [
+    { suffix: 'ing', replace: ['', 'e'] },
+    { suffix: 'ed', replace: ['', 'e', 'd'] },
+    { suffix: 'es', replace: ['', 'e'] },
+    { suffix: 's', replace: [''] },
+    { suffix: 'ied', replace: ['y'] },
+  ];
+  for (const rule of rules) {
+    if (word.endsWith(rule.suffix)) {
+      const stem = word.slice(0, -rule.suffix.length);
+      for (const repl of rule.replace) {
+        const c = stem + repl;
+        if (vocabIndex[c]) return c;
+      }
+    }
+  }
+  return null;
+}
+
 function getParagraphEnglishText(paraEl) {
-  // Get only the text content, excluding any hidden elements
   return paraEl.textContent.trim();
 }
 
-function show() {
-  const drawer = document.getElementById('drawer');
-  const overlay = document.getElementById('drawer-overlay');
-  drawer.classList.add('visible');
-  overlay.classList.add('visible');
-  isVisible = true;
-}
-
-function hideDrawer() {
-  const drawer = document.getElementById('drawer');
-  const overlay = document.getElementById('drawer-overlay');
-  drawer.classList.remove('visible');
-  overlay.classList.remove('visible');
-  isVisible = false;
-}
-
 function getWordAtClick(e) {
-  if (e.target.classList.contains('vocab')) return null;
-
   let range;
   if (document.caretPositionFromPoint) {
     const pos = document.caretPositionFromPoint(e.clientX, e.clientY);
-    if (!pos || !pos.offsetNode || pos.offsetNode.nodeType !== Node.TEXT_NODE) return null;
+    if (!pos?.offsetNode || pos.offsetNode.nodeType !== Node.TEXT_NODE) return null;
     range = document.createRange();
     range.setStart(pos.offsetNode, pos.offset);
     range.setEnd(pos.offsetNode, pos.offset);
@@ -216,12 +329,9 @@ function getWordAtClick(e) {
     return null;
   }
 
-  const textNode = range.startContainer;
+  const text = range.startContainer.textContent;
   const offset = range.startOffset;
-  const text = textNode.textContent;
-
-  let start = offset;
-  let end = offset;
+  let start = offset, end = offset;
   const wordChar = /[\w'-]/;
   while (start > 0 && wordChar.test(text[start - 1])) start--;
   while (end < text.length && wordChar.test(text[end])) end++;
@@ -231,13 +341,35 @@ function getWordAtClick(e) {
   return word;
 }
 
+function persistCache() {
+  try {
+    const obj = {};
+    // Only persist last 200 lookups
+    const entries = [...lookupCache.entries()].slice(-200);
+    for (const [k, v] of entries) obj[k] = v;
+    localStorage.setItem('vocab-lookup-cache', JSON.stringify(obj));
+  } catch (e) { /* ignore */ }
+}
+
+function show() {
+  document.getElementById('drawer').classList.add('visible');
+  document.getElementById('drawer-overlay').classList.add('visible');
+  isVisible = true;
+}
+
+function hideDrawer() {
+  document.getElementById('drawer').classList.remove('visible');
+  document.getElementById('drawer-overlay').classList.remove('visible');
+  isVisible = false;
+}
+
 function speakWord(word) {
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.8;
-    window.speechSynthesis.speak(utterance);
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US';
+    u.rate = 0.8;
+    window.speechSynthesis.speak(u);
   }
 }
 
