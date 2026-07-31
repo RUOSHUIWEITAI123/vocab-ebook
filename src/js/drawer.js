@@ -183,21 +183,49 @@ function findRoot(word) {
 }
 
 function wordAtClick(e) {
-  let range;
+  // Approach 1: caretPositionFromPoint
   if (document.caretPositionFromPoint) {
     const pos = document.caretPositionFromPoint(e.clientX, e.clientY);
-    if (!pos?.offsetNode || pos.offsetNode.nodeType !== Node.TEXT_NODE) return null;
-    range = document.createRange(); range.setStart(pos.offsetNode, pos.offset); range.setEnd(pos.offsetNode, pos.offset);
-  } else if (document.caretRangeFromPoint) {
-    range = document.caretRangeFromPoint(e.clientX, e.clientY);
-    if (!range || range.startContainer.nodeType !== Node.TEXT_NODE) return null;
-  } else return null;
-  const t = range.startContainer.textContent;
-  let s = range.startOffset, e2 = s;
-  while (s > 0 && /[\w'-]/.test(t[s-1])) s--;
-  while (e2 < t.length && /[\w'-]/.test(t[e2])) e2++;
-  const w = t.slice(s, e2).trim();
-  return (w.length >= 2 && w.length <= 30) ? w : null;
+    if (pos?.offsetNode) {
+      const node = pos.offsetNode;
+      // Element node (like SPAN) - use its text content directly
+      if (node.nodeType === Node.ELEMENT_NODE && node.textContent) {
+        const text = node.textContent.trim();
+        const words = text.split(/[^a-zA-Z'-]+/).filter(w => w.length >= 2);
+        // Return the first word in the element (simple approach)
+        return words[0] || null;
+      }
+      // Text node - use offset
+      if (node.nodeType === Node.TEXT_NODE) {
+        const t = node.textContent;
+        let s = pos.offset, e2 = s;
+        while (s > 0 && /[\w'-]/.test(t[s-1])) s--;
+        while (e2 < t.length && /[\w'-]/.test(t[e2])) e2++;
+        const w = t.slice(s, e2).trim();
+        if (w.length >= 2 && w.length <= 30) return w;
+      }
+    }
+  }
+  // Approach 2: caretRangeFromPoint (fallback)
+  if (document.caretRangeFromPoint) {
+    const range = document.caretRangeFromPoint(e.clientX, e.clientY);
+    if (range?.startContainer?.nodeType === Node.TEXT_NODE) {
+      const t = range.startContainer.textContent;
+      let s = range.startOffset, e2 = s;
+      while (s > 0 && /[\w'-]/.test(t[s-1])) s--;
+      while (e2 < t.length && /[\w'-]/.test(t[e2])) e2++;
+      const w = t.slice(s, e2).trim();
+      if (w.length >= 2 && w.length <= 30) return w;
+    }
+  }
+  // Approach 3: check if clicked on a text or vocab span
+  const el = e.target;
+  if (el?.classList?.contains('text') || el?.classList?.contains('vocab')) {
+    const text = el.textContent.trim();
+    const words = text.split(/[^a-zA-Z'-]+/).filter(w => w.length >= 2);
+    if (words.length === 1) return words[0];
+  }
+  return null;
 }
 
 async function loadDictIndex() {

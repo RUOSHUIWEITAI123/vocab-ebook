@@ -24,8 +24,8 @@ export function renderPart(part, container, dataset) {
 
   container.appendChild(el);
 
-  // Link English paragraphs to Chinese translations (kaoyan only)
-  if (part.sections.some(s => s.type === 'english')) {
+  // Link translations only for kaoyan (has real bilingual text)
+  if (dataset === 'kaoyan') {
     linkTranslations(el);
   }
 }
