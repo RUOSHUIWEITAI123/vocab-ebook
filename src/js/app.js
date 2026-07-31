@@ -13,6 +13,7 @@ let contentData = null, vocabIndex = null, currentIndex = 0, currentDataset = 'k
 const DATASETS = {
   kaoyan: { content: '/data/content.json', vocab: '/data/vocab-index.json' },
   cet4:   { content: '/data/cet4-content.json', vocab: '/data/cet4-vocab.json' },
+  gaokao: { content: '/data/gaokao-content.json', vocab: '/data/gaokao-vocab.json' },
 };
 
 async function loadDataset(name) {
