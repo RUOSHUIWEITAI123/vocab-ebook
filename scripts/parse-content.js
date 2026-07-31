@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 
-const SOURCE = path.resolve(rootDir, '..', '英语', '580词涵括文章.md');
+const SOURCE = path.resolve(rootDir, 'public', 'data', '580词涵括文章.md');
 const VOCAB_INDEX_PATH = path.resolve(rootDir, 'public', 'data', 'vocab-index.json');
 const OUTPUT = path.resolve(rootDir, 'public', 'data', 'content.json');
 

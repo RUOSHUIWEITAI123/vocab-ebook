@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 
-const SOURCE = path.resolve(rootDir, '..', '英语', '考研词汇闪过_580词.md');
+const SOURCE = path.resolve(rootDir, 'public', 'data', '考研词汇闪过_580词.md');
 const OUTPUT = path.resolve(rootDir, 'public', 'data', 'vocab-index.json');
 
 function extractVocabIndex(markdown) {
