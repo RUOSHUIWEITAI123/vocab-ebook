@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "高考英语词汇完整文章",
+    "title": "高考英语词汇故事",
     "totalParts": 42
   },
   "parts": [
@@ -8,14 +8,9 @@
       "id": "gaokao-part-1-first-day-of-school",
       "title": "Part 1 — First Day of School",
       "partLabel": "Part 1 — First Day of School",
-      "partTitle": "Part 1 — First Day of School",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -824,7 +819,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -1641,14 +1641,9 @@
       "id": "gaokao-part-2-a-new-friend",
       "title": "Part 2 — A New Friend",
       "partLabel": "Part 2 — A New Friend",
-      "partTitle": "Part 2 — A New Friend",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -2457,7 +2452,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -3274,14 +3274,9 @@
       "id": "gaokao-part-3-the-classroom",
       "title": "Part 3 — The Classroom",
       "partLabel": "Part 3 — The Classroom",
-      "partTitle": "Part 3 — The Classroom",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -4090,7 +4085,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -4907,14 +4907,9 @@
       "id": "gaokao-part-4-library-discovery",
       "title": "Part 4 — Library Discovery",
       "partLabel": "Part 4 — Library Discovery",
-      "partTitle": "Part 4 — Library Discovery",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -5723,7 +5718,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -6540,14 +6540,9 @@
       "id": "gaokao-part-5-science-fair",
       "title": "Part 5 — Science Fair",
       "partLabel": "Part 5 — Science Fair",
-      "partTitle": "Part 5 — Science Fair",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -7356,7 +7351,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -8173,14 +8173,9 @@
       "id": "gaokao-part-6-sports-day",
       "title": "Part 6 — Sports Day",
       "partLabel": "Part 6 — Sports Day",
-      "partTitle": "Part 6 — Sports Day",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -8989,7 +8984,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -9806,14 +9806,9 @@
       "id": "gaokao-part-7-english-competition",
       "title": "Part 7 — English Competition",
       "partLabel": "Part 7 — English Competition",
-      "partTitle": "Part 7 — English Competition",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -10622,7 +10617,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -11439,14 +11439,9 @@
       "id": "gaokao-part-8-math-challenge",
       "title": "Part 8 — Math Challenge",
       "partLabel": "Part 8 — Math Challenge",
-      "partTitle": "Part 8 — Math Challenge",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -12255,7 +12250,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -13072,14 +13072,9 @@
       "id": "gaokao-part-9-history-lesson",
       "title": "Part 9 — History Lesson",
       "partLabel": "Part 9 — History Lesson",
-      "partTitle": "Part 9 — History Lesson",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -13888,7 +13883,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -14705,14 +14705,9 @@
       "id": "gaokao-part-10-geography-project",
       "title": "Part 10 — Geography Project",
       "partLabel": "Part 10 — Geography Project",
-      "partTitle": "Part 10 — Geography Project",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -15521,7 +15516,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -16338,14 +16338,9 @@
       "id": "gaokao-part-11-art-class",
       "title": "Part 11 — Art Class",
       "partLabel": "Part 11 — Art Class",
-      "partTitle": "Part 11 — Art Class",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -17154,7 +17149,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -17971,14 +17971,9 @@
       "id": "gaokao-part-12-music-festival",
       "title": "Part 12 — Music Festival",
       "partLabel": "Part 12 — Music Festival",
-      "partTitle": "Part 12 — Music Festival",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -18787,7 +18782,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -19604,14 +19604,9 @@
       "id": "gaokao-part-13-computer-lab",
       "title": "Part 13 — Computer Lab",
       "partLabel": "Part 13 — Computer Lab",
-      "partTitle": "Part 13 — Computer Lab",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -20420,7 +20415,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -21237,14 +21237,9 @@
       "id": "gaokao-part-14-biology-experiment",
       "title": "Part 14 — Biology Experiment",
       "partLabel": "Part 14 — Biology Experiment",
-      "partTitle": "Part 14 — Biology Experiment",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -22053,7 +22048,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -22870,14 +22870,9 @@
       "id": "gaokao-part-15-chemistry-formula",
       "title": "Part 15 — Chemistry Formula",
       "partLabel": "Part 15 — Chemistry Formula",
-      "partTitle": "Part 15 — Chemistry Formula",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -23686,7 +23681,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -24503,14 +24503,9 @@
       "id": "gaokao-part-16-physics-in-action",
       "title": "Part 16 — Physics in Action",
       "partLabel": "Part 16 — Physics in Action",
-      "partTitle": "Part 16 — Physics in Action",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -25319,7 +25314,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -26136,14 +26136,9 @@
       "id": "gaokao-part-17-chinese-literature",
       "title": "Part 17 — Chinese Literature",
       "partLabel": "Part 17 — Chinese Literature",
-      "partTitle": "Part 17 — Chinese Literature",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -26952,7 +26947,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -27769,14 +27769,9 @@
       "id": "gaokao-part-18-poetry-reading",
       "title": "Part 18 — Poetry Reading",
       "partLabel": "Part 18 — Poetry Reading",
-      "partTitle": "Part 18 — Poetry Reading",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -28585,7 +28580,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -29402,14 +29402,9 @@
       "id": "gaokao-part-19-debate-team",
       "title": "Part 19 — Debate Team",
       "partLabel": "Part 19 — Debate Team",
-      "partTitle": "Part 19 — Debate Team",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -30218,7 +30213,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -31035,14 +31035,9 @@
       "id": "gaokao-part-20-speech-contest",
       "title": "Part 20 — Speech Contest",
       "partLabel": "Part 20 — Speech Contest",
-      "partTitle": "Part 20 — Speech Contest",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -31851,7 +31846,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -32668,14 +32668,9 @@
       "id": "gaokao-part-21-volunteer-work",
       "title": "Part 21 — Volunteer Work",
       "partLabel": "Part 21 — Volunteer Work",
-      "partTitle": "Part 21 — Volunteer Work",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -33484,7 +33479,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -34301,14 +34301,9 @@
       "id": "gaokao-part-22-community-service",
       "title": "Part 22 — Community Service",
       "partLabel": "Part 22 — Community Service",
-      "partTitle": "Part 22 — Community Service",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -35117,7 +35112,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -35934,14 +35934,9 @@
       "id": "gaokao-part-23-environmental-club",
       "title": "Part 23 — Environmental Club",
       "partLabel": "Part 23 — Environmental Club",
-      "partTitle": "Part 23 — Environmental Club",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -36750,7 +36745,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -37567,14 +37567,9 @@
       "id": "gaokao-part-24-student-council",
       "title": "Part 24 — Student Council",
       "partLabel": "Part 24 — Student Council",
-      "partTitle": "Part 24 — Student Council",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -38383,7 +38378,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -39200,14 +39200,9 @@
       "id": "gaokao-part-25-career-day",
       "title": "Part 25 — Career Day",
       "partLabel": "Part 25 — Career Day",
-      "partTitle": "Part 25 — Career Day",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -40016,7 +40011,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -40833,14 +40833,9 @@
       "id": "gaokao-part-26-college-dreams",
       "title": "Part 26 — College Dreams",
       "partLabel": "Part 26 — College Dreams",
-      "partTitle": "Part 26 — College Dreams",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -41649,7 +41644,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -42466,14 +42466,9 @@
       "id": "gaokao-part-27-the-big-exam",
       "title": "Part 27 — The Big Exam",
       "partLabel": "Part 27 — The Big Exam",
-      "partTitle": "Part 27 — The Big Exam",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -43282,7 +43277,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -44099,14 +44099,9 @@
       "id": "gaokao-part-28-graduation-prep",
       "title": "Part 28 — Graduation Prep",
       "partLabel": "Part 28 — Graduation Prep",
-      "partTitle": "Part 28 — Graduation Prep",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -44915,7 +44910,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -45732,14 +45732,9 @@
       "id": "gaokao-part-29-summer-plans",
       "title": "Part 29 — Summer Plans",
       "partLabel": "Part 29 — Summer Plans",
-      "partTitle": "Part 29 — Summer Plans",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -46548,7 +46543,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -47365,14 +47365,9 @@
       "id": "gaokao-part-30-parting-words",
       "title": "Part 30 — Parting Words",
       "partLabel": "Part 30 — Parting Words",
-      "partTitle": "Part 30 — Parting Words",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -48181,7 +48176,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -48998,14 +48998,9 @@
       "id": "gaokao-part-31-new-beginnings",
       "title": "Part 31 — New Beginnings",
       "partLabel": "Part 31 — New Beginnings",
-      "partTitle": "Part 31 — New Beginnings",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -49814,7 +49809,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -50631,14 +50631,9 @@
       "id": "gaokao-part-32-looking-back",
       "title": "Part 32 — Looking Back",
       "partLabel": "Part 32 — Looking Back",
-      "partTitle": "Part 32 — Looking Back",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -51447,7 +51442,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -52264,14 +52264,9 @@
       "id": "gaokao-part-33-dreams-and-goals",
       "title": "Part 33 — Dreams and Goals",
       "partLabel": "Part 33 — Dreams and Goals",
-      "partTitle": "Part 33 — Dreams and Goals",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -53080,7 +53075,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -53897,14 +53897,9 @@
       "id": "gaokao-part-34-the-journey-ahead",
       "title": "Part 34 — The Journey Ahead",
       "partLabel": "Part 34 — The Journey Ahead",
-      "partTitle": "Part 34 — The Journey Ahead",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -54713,7 +54708,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -55530,14 +55530,9 @@
       "id": "gaokao-part-35-friendship-forever",
       "title": "Part 35 — Friendship Forever",
       "partLabel": "Part 35 — Friendship Forever",
-      "partTitle": "Part 35 — Friendship Forever",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -56346,7 +56341,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -57163,14 +57163,9 @@
       "id": "gaokao-part-36-life-lessons",
       "title": "Part 36 — Life Lessons",
       "partLabel": "Part 36 — Life Lessons",
-      "partTitle": "Part 36 — Life Lessons",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -57979,7 +57974,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -58796,14 +58796,9 @@
       "id": "gaokao-part-37-growing-up",
       "title": "Part 37 — Growing Up",
       "partLabel": "Part 37 — Growing Up",
-      "partTitle": "Part 37 — Growing Up",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -59612,7 +59607,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -60429,14 +60429,9 @@
       "id": "gaokao-part-38-finding-yourself",
       "title": "Part 38 — Finding Yourself",
       "partLabel": "Part 38 — Finding Yourself",
-      "partTitle": "Part 38 — Finding Yourself",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -61245,7 +61240,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -62062,14 +62062,9 @@
       "id": "gaokao-part-39-making-a-difference",
       "title": "Part 39 — Making a Difference",
       "partLabel": "Part 39 — Making a Difference",
-      "partTitle": "Part 39 — Making a Difference",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -62878,7 +62873,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -63695,14 +63695,9 @@
       "id": "gaokao-part-40-the-future",
       "title": "Part 40 — The Future",
       "partLabel": "Part 40 — The Future",
-      "partTitle": "Part 40 — The Future",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -64511,7 +64506,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -65328,14 +65328,9 @@
       "id": "gaokao-part-41-hope",
       "title": "Part 41 — Hope",
       "partLabel": "Part 41 — Hope",
-      "partTitle": "Part 41 — Hope",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -66144,7 +66139,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
@@ -66961,14 +66961,9 @@
       "id": "gaokao-part-42-chapter-42",
       "title": "Part 42 — Chapter 42",
       "partLabel": "Part 42 — Chapter 42",
-      "partTitle": "Part 42 — Chapter 42",
       "sections": [
         {
           "type": "english",
-          "paragraphs": []
-        },
-        {
-          "type": "chinese",
           "paragraphs": [
             {
               "segments": [
@@ -67047,7 +67042,12 @@
                   "value": " — words that painted the canvas of his experience."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "chinese",
+          "paragraphs": [
             {
               "segments": [
                 {
