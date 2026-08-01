@@ -1,0 +1,137 @@
+{
+  "a": {
+    "file": "dict-a.json",
+    "count": 230235,
+    "size": "7234KB"
+  },
+  "b": {
+    "file": "dict-b.json",
+    "count": 186254,
+    "size": "5551KB"
+  },
+  "c": {
+    "file": "dict-c.json",
+    "count": 312991,
+    "size": "9889KB"
+  },
+  "d": {
+    "file": "dict-d.json",
+    "count": 175442,
+    "size": "5425KB"
+  },
+  "e": {
+    "file": "dict-e.json",
+    "count": 130020,
+    "size": "4149KB"
+  },
+  "f": {
+    "file": "dict-f.json",
+    "count": 142683,
+    "size": "4393KB"
+  },
+  "g": {
+    "file": "dict-g.json",
+    "count": 116727,
+    "size": "3557KB"
+  },
+  "h": {
+    "file": "dict-h.json",
+    "count": 134223,
+    "size": "4141KB"
+  },
+  "i": {
+    "file": "dict-i.json",
+    "count": 119465,
+    "size": "3867KB"
+  },
+  "j": {
+    "file": "dict-j.json",
+    "count": 25598,
+    "size": "755KB"
+  },
+  "k": {
+    "file": "dict-k.json",
+    "count": 47292,
+    "size": "1321KB"
+  },
+  "l": {
+    "file": "dict-l.json",
+    "count": 131614,
+    "size": "4034KB"
+  },
+  "m": {
+    "file": "dict-m.json",
+    "count": 212128,
+    "size": "6577KB"
+  },
+  "n": {
+    "file": "dict-n.json",
+    "count": 105015,
+    "size": "3244KB"
+  },
+  "o": {
+    "file": "dict-o.json",
+    "count": 89107,
+    "size": "2715KB"
+  },
+  "p": {
+    "file": "dict-p.json",
+    "count": 267704,
+    "size": "8363KB"
+  },
+  "q": {
+    "file": "dict-q.json",
+    "count": 15474,
+    "size": "473KB"
+  },
+  "r": {
+    "file": "dict-r.json",
+    "count": 156377,
+    "size": "4829KB"
+  },
+  "s": {
+    "file": "dict-s.json",
+    "count": 359578,
+    "size": "11096KB"
+  },
+  "t": {
+    "file": "dict-t.json",
+    "count": 192290,
+    "size": "5951KB"
+  },
+  "u": {
+    "file": "dict-u.json",
+    "count": 59699,
+    "size": "1790KB"
+  },
+  "v": {
+    "file": "dict-v.json",
+    "count": 54058,
+    "size": "1666KB"
+  },
+  "w": {
+    "file": "dict-w.json",
+    "count": 74622,
+    "size": "2236KB"
+  },
+  "x": {
+    "file": "dict-x.json",
+    "count": 5207,
+    "size": "148KB"
+  },
+  "y": {
+    "file": "dict-y.json",
+    "count": 12278,
+    "size": "338KB"
+  },
+  "z": {
+    "file": "dict-z.json",
+    "count": 13257,
+    "size": "369KB"
+  },
+  "_": {
+    "file": "dict-_.json",
+    "count": 7771,
+    "size": "218KB"
+  }
+}

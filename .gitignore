@@ -2,4 +2,3 @@ node_modules/
 dist/
 .git/
 docs/
-public/data/dict/
