@@ -14,11 +14,19 @@ const dictCache = {};
 function dictLetter(w) { return /[a-z]/.test(w[0]) ? w[0] : '_'; }
 async function loadDict(letter) {
   if (dictCache[letter]) return dictCache[letter];
+  // Return empty if already tried and failed
+  if (dictCache[letter] === null) return {};
   try {
-    const r = await fetch(`/data/dict/dict-${letter}.json`);
-    dictCache[letter] = r.ok ? await r.json() : {};
-  } catch (e) { dictCache[letter] = {}; }
-  return dictCache[letter];
+    const r = await fetch(`/data/dict/dict-${letter}.json`, { signal: AbortSignal.timeout(5000) });
+    if (r.ok) {
+      dictCache[letter] = await r.json();
+      console.log(`📚 Dict ${letter}: loaded`);
+      return dictCache[letter];
+    }
+  } catch (e) { /* network error or file not found */ }
+  // Mark as failed - don't retry
+  dictCache[letter] = null;
+  return {};
 }
 
 export function initDrawer(index) {
@@ -109,7 +117,7 @@ function lookupWord(word) {
   }
   // Load dict letter & retry
   loadDict(dictLetter(lower)).then(data => {
-    if (data[lower]) showOffline(word, data[lower]);
+    if (data && data[lower]) showOffline(word, data[lower]);
     else showOnline(word);
   }).catch(() => showOnline(word));
 }
